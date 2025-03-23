@@ -68,12 +68,14 @@ def _compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, an
     solution_code = extract_code_from_string(solution_str)
 
     if not pass_fmt or len(solution_code) == 0:  # only print full output when there is an error
-        reward_log.append("-" * 16 + "Bad format detected!" + "-" * 16)
-        reward_log.append("-" * 16 + "Original Model Output" + "-" * 16)
+        reward_log.append("\nBad format detected!")
+        reward_log.append("Original Model Output:")
+        reward_log.append("-" * 32)
         reward_log.append(solution_str)
+        reward_log.append("-" * 32)
         return -answer_reward - format_reward, "\n".join(reward_log)
 
-    reward_log.append("-" * 16 + "Extracted Code to Execute" + "-" * 16)
+    # reward_log.append("-" * 16 + "Extracted Code to Execute" + "-" * 16)
     ground_truth = json.loads(ground_truth)
 
     t_start = time.time()
@@ -100,7 +102,7 @@ def _compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, an
         stdout_list: str = ground_truth["outputs"]
 
         # Add parallelism
-        with ThreadPoolExecutor(max_workers=min(8, len(stdin_list))) as executor:
+        with ThreadPoolExecutor(max_workers=min(4, len(stdin_list))) as executor:
             futures = [
                 executor.submit(remote_check_stdio, solution_code, stdin, stdout)
                 for stdin, stdout in zip(stdin_list, stdout_list)
@@ -108,14 +110,15 @@ def _compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, an
             for future in as_completed(futures):
                 succ, output, stdin, stdout = future.result()
                 if not succ or output.strip() != stdout.strip():
-                    output = output[:_MAX_CHAR_DISPLAY]  # truncate output to print
-                    reward_log.append("!" * 16 + f"⚠️ Test Execution Failed in {time.time() - t_start:.1f}s" + "!" * 16)
-                    reward_log.append(f"🔎Input: {repr(stdin)}")
-                    reward_log.append(f"✅Expected: {repr(stdout.strip())}")
+                    # output = output[:_MAX_CHAR_DISPLAY]  # truncate output to print
+                    # reward_log.append("!" * 16 + f"⚠️ Test Execution Failed in {time.time() - t_start:.1f}s" + "!" * 16)
+                    # reward_log.append(f"🔎Input: {repr(stdin)}")
+                    reward_log.append(f"---Error---")
+                    reward_log.append(f"Expected: {repr(stdout.strip())}")
                     reward_log.append(
-                        f"❌Actual: {output if output.startswith(_ERROR_MSG_PREFIX) else repr(output.strip())}")
-                    reward_log.append("-" * 16 + "Failed Prompt" + "-" * 16)
-                    reward_log.append(extra_info["prompt"].replace("\n\n", "\n"))
+                        f"Actual: {output if output.startswith(_ERROR_MSG_PREFIX) else repr(output.strip())}")
+                    # reward_log.append("-" * 16 + "Failed Prompt" + "-" * 16)
+                    # reward_log.append(extra_info["prompt"].replace("\n\n", "\n"))
                     return format_reward, "\n".join(reward_log)
     else:
         raise ValueError(
@@ -127,7 +130,7 @@ def _compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, an
     return format_reward + answer_reward, "\n".join(reward_log)
 
 
-def compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, answer_reward=1.):
+def compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, answer_reward=1., debug=False):
     if isinstance(extra_info, np.ndarray):
         extra_info = extra_info.item()
     score, reward_log = _compute_score(solution_str,
@@ -136,6 +139,11 @@ def compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, ans
                                        format_reward=format_reward,
                                        answer_reward=answer_reward)
     marker = "✅" if score == (format_reward + answer_reward) else "❌"
-    reward_log = marker * 16 + "Reward Calculation" + marker * 16 + "\n" + reward_log + "\n" + marker * 16 + f"Final Rward = {score}" + marker * 16
-    print(reward_log + "\n\n")
-    return score
+    if debug:
+        print(f"=" * 60)
+        reward_log = "Reward Summary " + marker * 1 + "\nReward Log:" + reward_log + "\n" + f"Final Reward = {score} " + marker * 1
+        print(reward_log + "\n")
+        print(f"=" * 60)
+    else:
+        reward_log = f"Reward Summary {marker} /// Final Reward = {score}"
+    return score, reward_log
