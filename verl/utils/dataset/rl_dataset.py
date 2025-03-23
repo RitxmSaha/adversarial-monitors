@@ -126,12 +126,18 @@ class RLHFDataset(Dataset):
             dataframe = pd.read_parquet(parquet_file)
             dataframes.append(dataframe)
         self.dataframe = pd.concat(dataframes)
-
+        
+        valid_rows = self.dataframe[self.prompt_key].notnull()
+        if not all(valid_rows):
+            print(self.dataframe[~valid_rows])
+            raise ValueError(f"Error: There are {(~valid_rows).sum()} rows with None in '{self.prompt_key}' field!")
+        
         print(f'original dataset len: {len(self.dataframe)}')
 
         # filter out too long prompts
         tokenizer = self.tokenizer
         prompt_key = self.prompt_key
+
         self.dataframe = self.dataframe[self.dataframe.apply(lambda doc: len(
             tokenizer.apply_chat_template(doc[prompt_key], add_generation_prompt=True)) <= self.max_prompt_length,
                                                              axis=1)]

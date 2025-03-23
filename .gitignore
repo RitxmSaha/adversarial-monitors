@@ -1,5 +1,5 @@
 # code r1
-data/
+# data/
 models/
 
 **/*.pt
@@ -120,4 +120,4 @@ tests/e2e/toy_examples/deepspeed/synchronous/output.txt
 *.lock
 
 # data
-*.parquet
+# *.parquet
