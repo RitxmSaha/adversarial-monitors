@@ -68,7 +68,7 @@ python3 -m verl.trainer.main_ppo \
     trainer.project_name='code-r1' \
     trainer.experiment_name=${RUN_NAME} \
     trainer.nnodes=1 \
-    trainer.default_local_dir=./outputs/${RUN_NAME} \
+    trainer.default_local_dir=./model_outputs/${RUN_NAME} \
     trainer.n_gpus_per_node=$GPUS_PER_NODE \
     trainer.save_freq=64 \
     trainer.test_freq=16 \

@@ -130,7 +130,7 @@ def _compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, an
     return format_reward + answer_reward, "\n".join(reward_log)
 
 
-def compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, answer_reward=1., debug=False):
+def compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, answer_reward=1., debug=True):
     if isinstance(extra_info, np.ndarray):
         extra_info = extra_info.item()
     score, reward_log = _compute_score(solution_str,
@@ -146,4 +146,5 @@ def compute_score(solution_str, ground_truth, extra_info, format_reward=0.1, ans
         print(f"=" * 60)
     else:
         reward_log = f"Reward Summary {marker} /// Final Reward = {score}"
+        print(reward_log)
     return score, reward_log
