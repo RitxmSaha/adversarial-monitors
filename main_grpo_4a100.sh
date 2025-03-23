@@ -1,5 +1,5 @@
 #!/bin/bash
-# The config is optimized for 8xA100 (Singularity)
+# The config is optimized for 4xA100
 set -x
 
 if [ -z "$CUDA_VISIBLE_DEVICES" ]; then
@@ -8,14 +8,18 @@ else
     GPUS_PER_NODE=$(echo "$CUDA_VISIBLE_DEVICES" | awk -F',' '{print NF}')
 fi
 
+# ENV variables
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True 
+export VLLM_ATTENTION_BACKEND=XFORMERS
+
 # MAIN CONFIG
 MAX_EPOCHS=8
-DATASET=kodcode-9k-sing
+DATASET=kodcode-9k
 MODEL_PATH=Qwen/Qwen2.5-Coder-7B-Instruct
 ROLLOUT_N_SAMPLE=16
 ROLLOUT_N_QUERY=16
-MICRO_BATCH_PER_GPU=8 # * GPUS_PER_NODE -> GLOBAL_BATCH_SIZE
-GRAD_ACC_STEPS=4
+MICRO_BATCH_PER_GPU=2 # * GPUS_PER_NODE -> GLOBAL_BATCH_SIZE
+GRAD_ACC_STEPS=16
 GLOBAL_BATCH_SIZE=$(($(($GPUS_PER_NODE * $MICRO_BATCH_PER_GPU)) * $GRAD_ACC_STEPS))
 
 MODEL_NICKNAME=$(echo $MODEL_PATH | cut -d'/' -f2)
@@ -32,15 +36,13 @@ else
     echo "Assertion passed: ${TOTAL_SAMPLES} is divisible by ${GLOBAL_BATCH_SIZE}."
 fi
 
-export VLLM_ATTENTION_BACKEND=XFORMERS
-
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
     data.train_files=data/$DATASET/train.parquet \
     data.val_files=data/$DATASET/test.parquet \
     data.train_batch_size=$ROLLOUT_N_QUERY \
-    data.max_prompt_length=2048 \
-    data.max_response_length=4096 \
+    data.max_prompt_length=256 \
+    data.max_response_length=2048 \
     actor_rollout_ref.model.path=$MODEL_PATH \
     actor_rollout_ref.actor.optim.lr=5e-7 \
     actor_rollout_ref.model.use_remove_padding=True \
@@ -51,12 +53,13 @@ python3 -m verl.trainer.main_ppo \
     actor_rollout_ref.actor.kl_loss_type=low_var_kl \
     actor_rollout_ref.model.enable_gradient_checkpointing=True \
     actor_rollout_ref.actor.fsdp_config.param_offload=False \
-    actor_rollout_ref.actor.fsdp_config.optimizer_offload=False \
-    actor_rollout_ref.rollout.log_prob_micro_batch_size=256 \
+    actor_rollout_ref.actor.fsdp_config.optimizer_offload=True \
+    actor_rollout_ref.rollout.log_prob_micro_batch_size=128 \
     actor_rollout_ref.rollout.name=vllm \
-    actor_rollout_ref.rollout.gpu_memory_utilization=0.5 \
+    actor_rollout_ref.rollout.gpu_memory_utilization=0.2 \
     actor_rollout_ref.rollout.n=$ROLLOUT_N_SAMPLE \
-    actor_rollout_ref.ref.log_prob_micro_batch_size=256 \
+    actor_rollout_ref.ref.log_prob_micro_batch_size=128 \
+    actor_rollout_ref.rollout.tensor_model_parallel_size=1 \
     actor_rollout_ref.ref.fsdp_config.param_offload=False \
     algorithm.kl_ctrl.kl_coef=0.001 \
     trainer.critic_warmup=0 \

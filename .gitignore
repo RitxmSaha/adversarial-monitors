@@ -1,6 +1,7 @@
 # code r1
 # data/
 models/
+model_outputs/
 
 **/*.pt
 **/checkpoints

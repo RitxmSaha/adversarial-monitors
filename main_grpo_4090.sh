@@ -70,7 +70,9 @@ python3 -m verl.trainer.main_ppo \
     trainer.nnodes=1 \
     trainer.default_local_dir=./model_outputs/${RUN_NAME} \
     trainer.n_gpus_per_node=$GPUS_PER_NODE \
-    trainer.save_freq=64 \
+    trainer.save_freq=256 \
     trainer.test_freq=16 \
+    trainer.resume_mode=auto \
+    trainer.remove_previous_ckpt_in_save=True \
     trainer.total_epochs=$MAX_EPOCHS \
     reward_model.reward_manager=prime $@ 2>&1 | tee ${RUN_NAME}.log
