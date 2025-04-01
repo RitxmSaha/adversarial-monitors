@@ -1,0 +1,8 @@
+# @configure_input@
+#
+# shellcheck shell=sh
+# shellcheck disable=SC2034
+
+NAME="@PACKAGE_NAME@"
+TARNAME="@PACKAGE_TARNAME@"
+VERSION="@PACKAGE_VERSION@"

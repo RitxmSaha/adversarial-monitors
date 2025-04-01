@@ -1,0 +1,54 @@
+#!/usr/bin/expect -f
+# This file is part of Firejail project
+# Copyright (C) 2014-2025 Firejail Authors
+# License GPL v2
+
+set timeout 10
+spawn $env(SHELL)
+match_max 100000
+
+send -- "firejail --private-cwd pwd\r"
+expect {
+	timeout {puts "TESTING ERROR 1\n";exit}
+	"$env(HOME)"
+}
+sleep 1
+
+send -- "firejail --private-cwd=/etc pwd\r"
+expect {
+	timeout {puts "TESTING ERROR 2\n";exit}
+	"/etc"
+}
+sleep 1
+
+send -- "firejail --private --private-cwd=. pwd\r"
+expect {
+	timeout {puts "TESTING ERROR 3\n";exit}
+	"invalid private working directory"
+}
+sleep 1
+
+after 100
+send -- "firejail  --private-cwd='\${HOME}' pwd\r"
+expect {
+	timeout {puts "TESTING ERROR 4\n";exit}
+	"$env(HOME)"
+}
+sleep 1
+
+after 100
+send -- "firejail  --private-cwd=\"\${HOME}\" pwd\r"
+expect {
+	timeout {puts "TESTING ERROR 5\n";exit}
+	"$env(HOME)"
+}
+sleep 1
+
+send -- "firejail  --profile=private-cwd.profile pwd\r"
+expect {
+	timeout {puts "TESTING ERROR 6\n";exit}
+	"$env(HOME)"
+}
+after 100
+
+puts "all done\n"

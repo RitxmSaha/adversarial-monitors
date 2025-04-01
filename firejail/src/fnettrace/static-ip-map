@@ -1,0 +1,2491 @@
+#
+# This file is part of firejail project
+# The following list of addresses was compiled from various public sources.
+# License GPLv2
+#
+1.0.0.0/24 Cloudflare DNS
+1.1.1.0/24 Cloudflare DNS
+2.16.0.0/13 Akamai
+3.0.0.0/15 Amazon
+3.2.0.0/24 Amazon
+3.2.2.0/23 Amazon
+3.2.8.0/21 Amazon
+3.3.0.0/23 Amazon
+3.3.5.0/24 Amazon
+3.3.6.0/23 Amazon
+3.3.8.0/21 Amazon
+3.3.16.0/20 Amazon
+3.4.0.0/22 Amazon
+3.4.4.0/24 Amazon
+3.4.6.0/23 Amazon
+3.4.16.0/20 Amazon
+3.5.0.0/19 Amazon
+3.5.32.0/20 Amazon
+3.5.48.0/21 Amazon
+3.5.64.0/21 Amazon
+3.5.72.0/23 Amazon
+3.5.76.0/22 Amazon
+3.5.80.0/21 Amazon
+3.5.128.0/19 Amazon
+3.5.160.0/21 Amazon
+3.5.168.0/23 Amazon
+3.5.208.0/22 Amazon
+3.5.212.0/23 Amazon
+3.5.216.0/21 Amazon
+3.5.224.0/19 Amazon
+3.6.0.0/15 Amazon
+3.8.0.0/13 Amazon
+3.16.0.0/12 Amazon
+3.32.0.0/16 Amazon
+3.33.34.0/23 Amazon
+3.33.128.0/17 Amazon
+3.34.0.0/15 Amazon
+3.36.0.0/14 Amazon
+3.48.0.0/12 Amazon
+3.64.0.0/11 Amazon
+3.96.0.0/14 Amazon
+3.100.0.0/15 Amazon
+3.104.0.0/13 Amazon
+3.112.0.0/12 Amazon
+3.128.0.0/11 Amazon
+3.160.0.0/14 Amazon
+3.208.0.0/12 Amazon
+3.224.0.0/11 Amazon
+4.0.0.0/9 Level 3
+4.2.2.1/32 Level3 DNS
+4.2.2.2/31 Level3 DNS
+4.2.2.4/32 Level3 DNS
+4.128.0.0/9 Microsoft
+5.9.0.0/16 Hetzner
+5.10.117.0/24 IBM
+5.10.118.0/23 IBM
+5.75.128.0/17 Hetzner
+5.101.96.0/21 Digital Ocean
+5.101.104.0/22 Digital Ocean
+5.255.255.0/24 Yandex
+6.0.0.0/7 US Army
+8.0.0.0/9 Level 3
+8.8.4.0/24 Google DNS
+8.8.8.0/24 Google DNS
+8.20.247.20/32 Comodo DNS
+8.26.56.0/24 Comodo DNS
+8.34.208.0/20 Google
+8.35.192.0/20 Google
+9.0.0.0/8 IBM
+9.9.9.0/24 Quad9 DNS
+10.0.0.0/8 Local network
+11.0.0.0/8 US Army
+12.0.0.0/8 AT&T
+12.96.160.0/24 IBM
+13.32.0.0/15 Amazon
+13.34.0.128/26 Amazon
+13.34.1.0/26 Amazon
+13.34.3.128/25 Amazon
+13.34.4.64/26 Amazon
+13.34.5.12/30 Amazon
+13.34.5.16/31 Amazon
+13.34.5.44/30 Amazon
+13.34.5.48/31 Amazon
+13.34.5.78/31 Amazon
+13.34.5.80/31 Amazon
+13.34.5.110/31 Amazon
+13.34.5.112/31 Amazon
+13.34.5.128/25 Amazon
+13.34.6.192/26 Amazon
+13.34.7.64/26 Amazon
+13.34.8.64/26 Amazon
+13.34.9.0/26 Amazon
+13.34.10.128/26 Amazon
+13.34.11.0/26 Amazon
+13.34.11.128/26 Amazon
+13.34.12.64/26 Amazon
+13.34.12.192/27 Amazon
+13.34.12.242/31 Amazon
+13.34.12.244/31 Amazon
+13.34.13.18/31 Amazon
+13.34.13.20/31 Amazon
+13.34.13.50/31 Amazon
+13.34.13.52/31 Amazon
+13.34.14.128/25 Amazon
+13.34.15.0/26 Amazon
+13.34.16.64/26 Amazon
+13.34.16.192/27 Amazon
+13.34.17.24/29 Amazon
+13.34.17.64/26 Amazon
+13.34.18.192/26 Amazon
+13.34.19.192/26 Amazon
+13.34.20.0/25 Amazon
+13.34.21.64/26 Amazon
+13.34.22.88/29 Amazon
+13.34.22.160/27 Amazon
+13.34.22.192/26 Amazon
+13.34.23.0/24 Amazon
+13.34.24.64/26 Amazon
+13.34.24.128/26 Amazon
+13.34.24.192/27 Amazon
+13.34.25.64/26 Amazon
+13.34.25.128/26 Amazon
+13.34.25.192/27 Amazon
+13.34.25.248/29 Amazon
+13.34.26.0/24 Amazon
+13.34.27.16/31 Amazon
+13.34.27.32/27 Amazon
+13.34.27.64/26 Amazon
+13.34.27.128/27 Amazon
+13.34.28.0/22 Amazon
+13.34.32.0/25 Amazon
+13.34.32.128/26 Amazon
+13.34.33.0/24 Amazon
+13.34.34.0/23 Amazon
+13.34.36.0/23 Amazon
+13.34.38.0/25 Amazon
+13.34.38.128/26 Amazon
+13.34.39.0/24 Amazon
+13.34.40.0/22 Amazon
+13.34.44.0/22 Amazon
+13.34.48.0/22 Amazon
+13.34.52.0/22 Amazon
+13.34.56.0/22 Amazon
+13.34.60.0/23 Amazon
+13.34.62.0/26 Amazon
+13.34.62.128/25 Amazon
+13.34.63.0/25 Amazon
+13.34.63.128/26 Amazon
+13.35.0.0/16 Amazon
+13.36.0.0/14 Amazon
+13.40.0.0/13 Amazon
+13.48.0.0/13 Amazon
+13.56.0.0/14 Amazon
+13.64.0.0/11 Microsoft
+13.96.0.0/13 Microsoft
+13.104.0.0/14 Microsoft
+13.112.0.0/14 Amazon
+13.124.0.0/14 Amazon
+13.200.0.0/13 Amazon
+13.208.0.0/13 Amazon
+13.224.0.0/12 Amazon
+13.244.0.0/14 Amazon
+13.248.0.0/18 Amazon
+13.248.64.0/21 Amazon
+13.248.96.0/21 Amazon
+13.248.104.0/22 Amazon
+13.248.108.0/23 Amazon
+13.248.111.0/24 Amazon
+13.248.112.0/20 Amazon
+13.248.128.0/17 Amazon
+13.249.0.0/16 Amazon
+13.250.0.0/15 Amazon
+15.152.0.0/16 Amazon
+15.156.0.0/15 Amazon
+15.158.0.0/16 Amazon
+15.160.0.0/15 Amazon
+15.164.0.0/15 Amazon
+15.168.0.0/16 Amazon
+15.177.0.0/18 Amazon
+15.177.64.0/20 Amazon
+15.177.80.0/21 Amazon
+15.177.88.0/22 Amazon
+15.177.92.0/24 Amazon
+15.181.0.0/17 Amazon
+15.181.128.0/18 Amazon
+15.181.192.0/19 Amazon
+15.181.224.0/20 Amazon
+15.181.240.0/21 Amazon
+15.181.248.0/22 Amazon
+15.181.252.0/23 Amazon
+15.181.254.0/24 Amazon
+15.184.0.0/15 Amazon
+15.188.0.0/16 Amazon
+15.191.0.0/16 Amazon
+15.193.0.0/19 Amazon
+15.197.0.0/19 Amazon
+15.197.32.0/23 Amazon
+15.197.128.0/17 Amazon
+15.200.0.0/16 Amazon
+15.204.0.0/16 OVH
+15.205.0.0/16 Amazon
+15.206.0.0/15 Amazon
+15.220.0.0/19 Amazon
+15.220.220.0/22 Amazon
+15.220.224.0/23 Amazon
+15.220.226.0/24 Amazon
+15.220.250.0/23 Amazon
+15.220.252.0/22 Amazon
+15.221.0.0/19 Amazon
+15.221.33.0/24 Amazon
+15.221.34.0/23 Amazon
+15.221.36.0/22 Amazon
+15.221.40.0/21 Amazon
+15.221.48.0/22 Amazon
+15.221.52.0/23 Amazon
+15.222.0.0/15 Amazon
+15.228.0.0/15 Amazon
+15.230.0.4/30 Amazon
+15.230.0.12/31 Amazon
+15.230.0.14/32 Amazon
+15.230.4.19/32 Amazon
+15.230.4.152/29 Amazon
+15.230.4.160/30 Amazon
+15.230.4.176/28 Amazon
+15.230.5.0/24 Amazon
+15.230.6.0/24 Amazon
+15.230.14.12/32 Amazon
+15.230.14.18/31 Amazon
+15.230.14.20/31 Amazon
+15.230.14.252/31 Amazon
+15.230.16.0/32 Amazon
+15.230.16.12/32 Amazon
+15.230.16.17/32 Amazon
+15.230.16.18/31 Amazon
+15.230.16.20/31 Amazon
+15.230.16.252/31 Amazon
+15.230.18.0/24 Amazon
+15.230.21.0/24 Amazon
+15.230.22.0/23 Amazon
+15.230.24.0/21 Amazon
+15.230.32.0/24 Amazon
+15.230.35.0/24 Amazon
+15.230.36.0/23 Amazon
+15.230.38.0/24 Amazon
+15.230.39.0/26 Amazon
+15.230.39.64/26 Amazon
+15.230.39.128/26 Amazon
+15.230.39.192/26 Amazon
+15.230.40.0/22 Amazon
+15.230.49.0/24 Amazon
+15.230.50.0/23 Amazon
+15.230.52.0/22 Amazon
+15.230.56.0/22 Amazon
+15.230.60.0/23 Amazon
+15.230.64.192/26 Amazon
+15.230.65.0/24 Amazon
+15.230.66.0/23 Amazon
+15.230.68.0/22 Amazon
+15.230.72.0/22 Amazon
+15.230.76.0/23 Amazon
+15.230.78.0/24 Amazon
+15.230.79.0/25 Amazon
+15.230.79.128/26 Amazon
+15.230.80.0/21 Amazon
+15.230.88.0/22 Amazon
+15.230.92.0/23 Amazon
+15.230.94.0/24 Amazon
+15.230.129.0/24 Amazon
+15.230.130.0/24 Amazon
+15.230.131.0/27 Amazon
+15.230.131.32/27 Amazon
+15.230.131.64/26 Amazon
+15.230.131.128/27 Amazon
+15.230.131.160/28 Amazon
+15.230.132.0/24 Amazon
+15.230.133.0/28 Amazon
+15.230.133.16/29 Amazon
+15.230.133.24/32 Amazon
+15.230.133.26/31 Amazon
+15.230.133.28/31 Amazon
+15.230.134.0/23 Amazon
+15.230.136.0/23 Amazon
+15.230.138.0/24 Amazon
+15.230.140.0/22 Amazon
+15.230.144.0/23 Amazon
+15.230.148.0/24 Amazon
+15.230.149.0/30 Amazon
+15.230.149.4/31 Amazon
+15.230.149.8/30 Amazon
+15.230.150.0/23 Amazon
+15.230.152.0/21 Amazon
+15.230.160.0/22 Amazon
+15.230.164.0/23 Amazon
+15.230.166.0/24 Amazon
+15.230.170.0/23 Amazon
+15.230.173.0/24 Amazon
+15.230.174.0/24 Amazon
+15.230.176.0/24 Amazon
+15.230.177.0/30 Amazon
+15.230.178.0/24 Amazon
+15.230.179.0/28 Amazon
+15.230.179.16/29 Amazon
+15.230.181.0/24 Amazon
+15.230.182.0/23 Amazon
+15.230.184.0/23 Amazon
+15.230.186.0/24 Amazon
+15.230.188.0/23 Amazon
+15.230.190.0/24 Amazon
+15.230.192.0/23 Amazon
+15.230.195.0/24 Amazon
+15.230.196.0/23 Amazon
+15.230.198.0/24 Amazon
+15.230.199.0/28 Amazon
+15.230.200.0/23 Amazon
+15.230.202.0/30 Amazon
+15.230.203.0/24 Amazon
+15.230.204.0/30 Amazon
+15.230.205.0/24 Amazon
+15.230.206.0/23 Amazon
+15.231.0.0/16 Amazon
+15.235.0.0/16 OVH
+15.236.0.0/15 Amazon
+15.248.8.0/22 Amazon
+15.248.16.0/20 Amazon
+15.248.32.0/21 Amazon
+15.248.40.0/22 Amazon
+15.251.0.0/28 Amazon
+15.253.0.0/16 Amazon
+15.254.0.0/16 Amazon
+16.12.0.0/23 Amazon
+16.12.2.0/24 Amazon
+16.12.4.0/22 Amazon
+16.12.8.0/24 Amazon
+16.16.0.0/16 Amazon
+16.50.0.0/15 Amazon
+16.62.0.0/15 Amazon
+16.162.0.0/15 Amazon
+16.168.0.0/14 Amazon
+17.0.0.0/8 Apple
+18.32.0.0/11 Amazon
+18.60.0.0/15 Amazon
+18.64.0.0/10 Amazon
+18.100.0.0/15 Amazon
+18.102.0.0/16 Amazon
+18.116.0.0/14 Amazon
+18.128.0.0/9 Amazon
+18.130.0.0/16 Amazon
+18.132.0.0/14 Amazon
+18.136.0.0/16 Amazon
+18.138.0.0/15 Amazon
+18.140.0.0/14 Amazon
+18.144.0.0/15 Amazon
+18.148.0.0/14 Amazon
+18.153.0.0/16 Amazon
+18.156.0.0/14 Amazon
+18.162.0.0/15 Amazon
+18.166.0.0/15 Amazon
+18.168.0.0/14 Amazon
+18.175.0.0/16 Amazon
+18.176.0.0/12 Amazon
+18.192.0.0/11 Amazon
+18.224.0.0/13 Amazon
+18.232.0.0/14 Amazon
+18.236.0.0/15 Amazon
+18.246.0.0/16 Amazon
+18.252.0.0/15 Amazon
+18.254.0.0/16 Amazon
+19.0.0.0/8 Ford
+20.33.0.0/16 Microsoft
+20.34.0.0/15 Microsoft
+20.36.0.0/14 Microsoft
+20.40.0.0/13 Microsoft
+20.48.0.0/12 Microsoft
+20.64.0.0/10 Microsoft
+20.128.0.0/16 Microsoft
+20.192.0.0/10 Microsoft
+21.0.0.0/8 US Army
+22.0.0.0/8 US Army
+23.0.0.0/12 Akamai
+23.19.32.0/21 Leaseweb
+23.19.80.0/21 Leaseweb
+23.19.104.0/22 Leaseweb
+23.19.124.0/22 Leaseweb
+23.19.128.0/22 Leaseweb
+23.19.168.0/22 Leaseweb
+23.19.216.0/22 Leaseweb
+23.19.248.0/22 Leaseweb
+23.20.0.0/14 Amazon
+23.32.0.0/11 Akamai
+23.64.0.0/14 Akamai
+23.72.0.0/13 Akamai
+23.81.0.0/21 Leaseweb
+23.81.136.0/21 Leaseweb
+23.81.208.0/21 Leaseweb
+23.82.32.0/21 Leaseweb
+23.82.72.0/21 Leaseweb
+23.82.144.0/21 Leaseweb
+23.82.192.0/19 Leaseweb
+23.82.224.0/21 Leaseweb
+23.82.240.0/21 Leaseweb
+23.88.0.0/17 Hetzner
+23.92.224.0/19 OVH
+23.96.0.0/13 Microsoft
+23.105.64.0/19 Leaseweb
+23.106.0.0/19 Leaseweb
+23.106.192.0/19 Leaseweb
+23.108.128.0/19 Leaseweb
+23.108.224.0/19 Leaseweb
+23.160.0.0/24 Twitch
+23.192.0.0/11 Akamai
+23.227.32.0/19 Shopify
+23.229.128.0/17 GoDaddy
+23.235.32.0/20 Fastly
+23.236.48.0/20 Google
+23.246.0.0/18 Netflix
+23.251.128.0/19 Google
+24.199.64.0/21 Digital Ocean
+26.0.0.0/8 US Army
+27.0.0.0/22 Amazon
+28.0.0.0/7 US Army
+30.0.0.0/8 US Army
+31.13.0.0/17 Facebook
+31.13.24.0/21 Facebook
+33.0.0.0/8 US Army
+34.4.5.0/24 Google
+34.4.6.0/23 Google
+34.4.8.0/21 Google
+34.4.16.0/20 Google
+34.4.32.0/19 Google
+34.4.64.0/18 Google
+34.4.128.0/17 Google
+34.5.0.0/16 Google
+34.6.0.0/15 Google
+34.8.0.0/13 Google
+34.16.0.0/12 Google
+34.32.0.0/11 Google
+34.64.0.0/10 Google
+34.128.0.0/10 Google
+34.192.0.0/10 Amazon
+34.192.0.0/11 Amazon
+34.224.0.0/11 Amazon
+35.71.64.0/22 Amazon
+35.71.96.0/23 Amazon
+35.71.128.0/17 Amazon
+35.72.0.0/13 Amazon
+35.80.0.0/12 Amazon
+35.96.0.0/12 Amazon
+35.152.0.0/13 Amazon
+35.160.0.0/12 Amazon
+35.176.0.0/13 Amazon
+35.184.0.0/13 Google
+35.192.0.0/12 Google
+35.196.0.0/15 Google
+35.198.0.0/16 Google
+35.199.0.0/17 Google
+35.199.128.0/18 Google
+35.200.0.0/13 Google
+35.208.0.0/12 Google
+35.224.0.0/12 Google
+35.240.0.0/13 Google
+36.103.232.0/25 Amazon
+36.103.232.128/26 Amazon
+37.27.0.0/16 Hetzner
+37.59.0.0/16 OVH
+37.77.184.0/21 Netflix
+37.139.0.0/19 Digital Ocean
+37.187.0.0/16 OVH
+38.0.0.0/8 Cogent Communications
+40.74.0.0/15 Microsoft
+40.76.0.0/14 Microsoft
+40.80.0.0/12 Microsoft
+40.96.0.0/12 Microsoft
+40.112.0.0/13 Microsoft
+40.120.0.0/14 Microsoft
+40.124.0.0/16 Microsoft
+40.125.0.0/17 Microsoft
+40.160.0.0/17 OVH
+43.192.0.0/12 Amazon
+43.224.76.0/25 Amazon
+43.224.76.128/26 Amazon
+43.224.76.192/27 Amazon
+43.224.76.224/28 Amazon
+43.224.76.240/29 Amazon
+43.224.76.248/30 Amazon
+43.224.77.0/28 Amazon
+43.224.77.24/29 Amazon
+43.224.77.32/28 Amazon
+43.224.77.76/30 Amazon
+43.224.77.80/28 Amazon
+43.224.77.96/27 Amazon
+43.224.77.128/27 Amazon
+43.224.77.168/29 Amazon
+43.224.77.176/28 Amazon
+43.224.77.192/30 Amazon
+43.224.77.208/29 Amazon
+43.224.79.26/31 Amazon
+43.224.79.28/30 Amazon
+43.224.79.32/27 Amazon
+43.224.79.64/28 Amazon
+43.224.79.80/30 Amazon
+43.224.79.84/31 Amazon
+43.224.79.90/31 Amazon
+43.224.79.92/30 Amazon
+43.224.79.96/27 Amazon
+43.224.79.128/30 Amazon
+43.224.79.136/29 Amazon
+43.224.79.144/31 Amazon
+43.224.79.154/31 Amazon
+43.224.79.156/30 Amazon
+43.224.79.160/29 Amazon
+43.224.79.168/31 Amazon
+43.224.79.174/31 Amazon
+43.224.79.176/28 Amazon
+43.224.79.192/26 Amazon
+43.249.45.0/24 Amazon
+43.249.46.0/23 Amazon
+43.249.72.0/22 Fastly
+43.250.192.0/23 Amazon
+44.192.0.0/10 Amazon
+45.11.45.0/24 DNS-SB
+45.55.0.0/17 Digital Ocean
+45.55.128.0/17 Digital Ocean
+45.57.0.0/17 Netflix
+45.58.64.0/20 Dropbox
+45.60.0.0/16 Imperva
+45.64.64.0/22 Imperva
+45.79.0.0/16 Linode
+45.88.202.0/24 Anonymize Inc WHOIS Privacy Service
+45.88.203.0/24 Gab
+45.90.28.0/22 NextDNS
+45.113.128.0/22 Twitch
+45.223.0.0/16 Imperva
+46.4.0.0/16 Hetzner
+46.51.128.0/18 Amazon
+46.51.192.0/20 Amazon
+46.51.208.0/22 Amazon
+46.51.216.0/21 Amazon
+46.51.224.0/19 Amazon
+46.101.0.0/18 Digital Ocean
+46.101.64.0/19 Digital Ocean
+46.101.96.0/20 Digital Ocean
+46.101.112.0/20 Digital Ocean
+46.101.124.0/22 Digital Ocean
+46.101.128.0/17 Digital Ocean
+46.105.0.0/16 OVH
+46.105.198.0/23 OVH
+46.105.200.0/22 OVH
+46.105.204.0/24 OVH
+46.105.206.0/23 OVH
+46.137.0.0/16 Amazon
+46.244.32.0/20 OVH
+47.88.0.0/14 Alibaba
+48.0.0.0/8 Prudential US
+49.12.0.0/15 Hetzner
+50.16.0.0/14 Amazon
+50.22.248.0/25 IBM
+50.23.117.0/24 IBM
+50.23.118.0/23 IBM
+50.23.203.0/24 IBM
+50.28.0.0/18 Liquid Web
+50.28.5.0/24 Liquid Web
+50.28.64.0/19 Liquid Web
+50.57.240.0/20 Liquid Web
+50.112.0.0/16 Amazon
+50.116.0.0/18 Linode
+51.4.0.0/15 Microsoft
+51.8.0.0/14 Microsoft
+51.8.0.0/16 Microsoft
+51.20.0.0/14 Amazon
+51.51.0.0/16 Microsoft
+51.53.0.0/16 Microsoft
+51.103.0.0/16 Microsoft
+51.107.0.0/16 Microsoft
+51.116.0.0/16 Microsoft
+51.120.0.0/16 Microsoft
+51.124.0.0/16 Microsoft
+51.132.0.0/16 Microsoft
+51.136.0.0/16 Microsoft
+51.140.0.0/15 Microsoft
+51.161.0.0/16 OVH
+51.210.0.0/24 OVH
+52.0.0.0/11 Amazon
+52.32.0.0/13 Amazon
+52.40.0.0/14 Amazon
+52.44.0.0/15 Amazon
+52.46.0.0/17 Amazon
+52.46.128.0/19 Amazon
+52.46.164.0/22 Amazon
+52.46.168.0/21 Amazon
+52.46.176.0/21 Amazon
+52.46.184.0/22 Amazon
+52.46.188.24/29 Amazon
+52.46.188.36/30 Amazon
+52.46.188.40/29 Amazon
+52.46.188.48/28 Amazon
+52.46.188.64/27 Amazon
+52.46.188.96/30 Amazon
+52.46.188.108/30 Amazon
+52.46.188.120/30 Amazon
+52.46.188.132/30 Amazon
+52.46.188.136/29 Amazon
+52.46.188.144/28 Amazon
+52.46.188.160/27 Amazon
+52.46.188.192/30 Amazon
+52.46.188.204/30 Amazon
+52.46.188.208/30 Amazon
+52.46.188.216/30 Amazon
+52.46.188.224/27 Amazon
+52.46.189.0/28 Amazon
+52.46.189.16/30 Amazon
+52.46.189.32/27 Amazon
+52.46.189.64/27 Amazon
+52.46.189.96/28 Amazon
+52.46.189.112/30 Amazon
+52.46.189.124/30 Amazon
+52.46.189.128/28 Amazon
+52.46.189.156/30 Amazon
+52.46.189.160/30 Amazon
+52.46.189.168/29 Amazon
+52.46.189.176/29 Amazon
+52.46.189.192/28 Amazon
+52.46.189.216/29 Amazon
+52.46.189.224/29 Amazon
+52.46.189.240/28 Amazon
+52.46.190.0/28 Amazon
+52.46.190.32/28 Amazon
+52.46.190.52/30 Amazon
+52.46.190.56/29 Amazon
+52.46.190.64/28 Amazon
+52.46.190.92/30 Amazon
+52.46.190.96/28 Amazon
+52.46.190.120/29 Amazon
+52.46.190.144/29 Amazon
+52.46.190.152/30 Amazon
+52.46.190.164/30 Amazon
+52.46.190.168/30 Amazon
+52.46.190.180/30 Amazon
+52.46.190.188/30 Amazon
+52.46.190.192/31 Amazon
+52.46.190.202/31 Amazon
+52.46.190.204/30 Amazon
+52.46.190.208/29 Amazon
+52.46.190.216/31 Amazon
+52.46.190.222/31 Amazon
+52.46.190.224/28 Amazon
+52.46.190.240/30 Amazon
+52.46.190.244/31 Amazon
+52.46.190.254/31 Amazon
+52.46.191.0/29 Amazon
+52.46.191.8/30 Amazon
+52.46.191.12/31 Amazon
+52.46.191.18/31 Amazon
+52.46.191.20/30 Amazon
+52.46.191.24/30 Amazon
+52.46.191.28/31 Amazon
+52.46.191.34/31 Amazon
+52.46.191.36/31 Amazon
+52.46.191.42/31 Amazon
+52.46.191.44/30 Amazon
+52.46.191.48/31 Amazon
+52.46.191.52/30 Amazon
+52.46.191.60/30 Amazon
+52.46.191.64/29 Amazon
+52.46.191.72/31 Amazon
+52.46.191.76/30 Amazon
+52.46.191.80/28 Amazon
+52.46.191.96/28 Amazon
+52.46.191.120/29 Amazon
+52.46.191.128/29 Amazon
+52.46.191.136/31 Amazon
+52.46.191.140/30 Amazon
+52.46.191.144/31 Amazon
+52.46.191.148/30 Amazon
+52.46.191.152/31 Amazon
+52.46.191.156/30 Amazon
+52.46.191.164/30 Amazon
+52.46.191.168/29 Amazon
+52.46.191.176/28 Amazon
+52.46.191.192/30 Amazon
+52.46.191.200/30 Amazon
+52.46.191.210/31 Amazon
+52.46.191.212/30 Amazon
+52.46.191.216/29 Amazon
+52.46.191.224/28 Amazon
+52.46.191.240/31 Amazon
+52.46.192.0/19 Amazon
+52.46.224.0/20 Amazon
+52.46.240.0/22 Amazon
+52.46.249.0/24 Amazon
+52.46.250.0/23 Amazon
+52.46.252.0/22 Amazon
+52.47.0.0/16 Amazon
+52.48.0.0/12 Amazon
+52.64.0.0/12 Amazon
+52.80.0.0/15 Amazon
+52.82.0.0/17 Amazon
+52.82.128.0/19 Amazon
+52.82.160.0/21 Amazon
+52.82.168.0/24 Amazon
+52.82.169.0/27 Amazon
+52.82.176.0/21 Amazon
+52.82.184.0/23 Amazon
+52.82.187.0/24 Amazon
+52.82.188.0/22 Amazon
+52.82.192.0/18 Amazon
+52.83.0.0/16 Amazon
+52.84.0.0/14 Amazon
+52.88.0.0/14 Amazon
+52.92.0.0/16 Amazon
+52.93.0.0/22 Amazon
+52.93.4.0/23 Amazon
+52.93.8.0/22 Amazon
+52.93.12.12/31 Amazon
+52.93.14.18/31 Amazon
+52.93.16.0/23 Amazon
+52.93.18.178/31 Amazon
+52.93.19.236/31 Amazon
+52.93.20.0/24 Amazon
+52.93.21.14/31 Amazon
+52.93.32.176/32 Amazon
+52.93.32.179/32 Amazon
+52.93.32.180/32 Amazon
+52.93.34.40/32 Amazon
+52.93.34.42/32 Amazon
+52.93.34.56/31 Amazon
+52.93.34.120/29 Amazon
+52.93.35.212/31 Amazon
+52.93.37.222/31 Amazon
+52.93.38.0/24 Amazon
+52.93.43.0/24 Amazon
+52.93.48.0/24 Amazon
+52.93.50.128/27 Amazon
+52.93.50.160/27 Amazon
+52.93.50.192/30 Amazon
+52.93.51.28/31 Amazon
+52.93.55.144/30 Amazon
+52.93.55.148/31 Amazon
+52.93.55.152/29 Amazon
+52.93.55.160/29 Amazon
+52.93.56.0/23 Amazon
+52.93.58.32/28 Amazon
+52.93.59.0/24 Amazon
+52.93.60.0/24 Amazon
+52.93.62.0/23 Amazon
+52.93.64.0/24 Amazon
+52.93.66.0/23 Amazon
+52.93.69.0/24 Amazon
+52.93.71.37/32 Amazon
+52.93.73.0/26 Amazon
+52.93.75.0/24 Amazon
+52.93.76.0/24 Amazon
+52.93.78.0/24 Amazon
+52.93.80.0/23 Amazon
+52.93.87.96/27 Amazon
+52.93.91.96/28 Amazon
+52.93.91.112/30 Amazon
+52.93.92.64/29 Amazon
+52.93.92.72/30 Amazon
+52.93.96.0/22 Amazon
+52.93.112.0/24 Amazon
+52.93.120.176/30 Amazon
+52.93.121.187/32 Amazon
+52.93.121.188/31 Amazon
+52.93.121.190/32 Amazon
+52.93.121.195/32 Amazon
+52.93.121.196/31 Amazon
+52.93.121.198/32 Amazon
+52.93.122.131/32 Amazon
+52.93.122.202/31 Amazon
+52.93.122.218/32 Amazon
+52.93.122.255/32 Amazon
+52.93.123.6/32 Amazon
+52.93.123.11/32 Amazon
+52.93.123.98/31 Amazon
+52.93.123.136/32 Amazon
+52.93.123.255/32 Amazon
+52.93.124.14/31 Amazon
+52.93.124.96/31 Amazon
+52.93.124.210/31 Amazon
+52.93.124.212/31 Amazon
+52.93.125.42/31 Amazon
+52.93.126.76/32 Amazon
+52.93.126.122/31 Amazon
+52.93.126.132/30 Amazon
+52.93.126.136/30 Amazon
+52.93.126.144/30 Amazon
+52.93.126.198/31 Amazon
+52.93.126.204/30 Amazon
+52.93.126.212/30 Amazon
+52.93.126.234/31 Amazon
+52.93.126.244/31 Amazon
+52.93.126.250/31 Amazon
+52.93.127.17/32 Amazon
+52.93.127.18/31 Amazon
+52.93.127.24/30 Amazon
+52.93.127.68/30 Amazon
+52.93.127.92/30 Amazon
+52.93.127.96/27 Amazon
+52.93.127.128/30 Amazon
+52.93.127.132/31 Amazon
+52.93.127.138/31 Amazon
+52.93.127.146/31 Amazon
+52.93.127.148/31 Amazon
+52.93.127.152/29 Amazon
+52.93.127.160/29 Amazon
+52.93.127.168/31 Amazon
+52.93.127.172/30 Amazon
+52.93.127.176/29 Amazon
+52.93.127.184/31 Amazon
+52.93.127.194/31 Amazon
+52.93.127.196/30 Amazon
+52.93.127.200/29 Amazon
+52.93.127.216/30 Amazon
+52.93.127.220/31 Amazon
+52.93.127.232/32 Amazon
+52.93.127.237/32 Amazon
+52.93.127.238/31 Amazon
+52.93.127.244/30 Amazon
+52.93.127.248/29 Amazon
+52.93.129.95/32 Amazon
+52.93.131.217/32 Amazon
+52.93.133.127/32 Amazon
+52.93.133.129/32 Amazon
+52.93.133.131/32 Amazon
+52.93.133.133/32 Amazon
+52.93.133.153/32 Amazon
+52.93.133.155/32 Amazon
+52.93.133.175/32 Amazon
+52.93.133.177/32 Amazon
+52.93.133.179/32 Amazon
+52.93.133.181/32 Amazon
+52.93.134.181/32 Amazon
+52.93.135.195/32 Amazon
+52.93.137.0/24 Amazon
+52.93.138.252/31 Amazon
+52.93.139.252/31 Amazon
+52.93.141.212/30 Amazon
+52.93.141.216/29 Amazon
+52.93.141.224/28 Amazon
+52.93.141.240/30 Amazon
+52.93.141.244/31 Amazon
+52.93.146.5/32 Amazon
+52.93.149.0/24 Amazon
+52.93.150.0/23 Amazon
+52.93.153.80/32 Amazon
+52.93.153.148/31 Amazon
+52.93.153.168/29 Amazon
+52.93.153.176/30 Amazon
+52.93.156.0/22 Amazon
+52.93.178.128/27 Amazon
+52.93.178.160/27 Amazon
+52.93.178.192/27 Amazon
+52.93.178.224/29 Amazon
+52.93.178.232/30 Amazon
+52.93.193.192/29 Amazon
+52.93.193.200/30 Amazon
+52.93.198.0/25 Amazon
+52.93.229.148/31 Amazon
+52.93.236.0/23 Amazon
+52.93.240.146/31 Amazon
+52.93.240.148/30 Amazon
+52.93.240.152/29 Amazon
+52.93.240.160/27 Amazon
+52.93.240.192/29 Amazon
+52.93.240.200/30 Amazon
+52.93.240.204/31 Amazon
+52.93.245.0/24 Amazon
+52.93.247.0/25 Amazon
+52.93.248.0/22 Amazon
+52.93.254.0/24 Amazon
+52.94.0.0/20 Amazon
+52.94.16.0/22 Amazon
+52.94.20.0/24 Amazon
+52.94.22.0/23 Amazon
+52.94.24.0/22 Amazon
+52.94.28.0/23 Amazon
+52.94.30.0/24 Amazon
+52.94.32.0/19 Amazon
+52.94.64.0/22 Amazon
+52.94.68.0/23 Amazon
+52.94.72.0/21 Amazon
+52.94.80.0/20 Amazon
+52.94.96.0/19 Amazon
+52.94.128.0/20 Amazon
+52.94.148.0/22 Amazon
+52.94.152.3/32 Amazon
+52.94.152.9/32 Amazon
+52.94.152.11/32 Amazon
+52.94.152.12/32 Amazon
+52.94.152.44/32 Amazon
+52.94.152.60/30 Amazon
+52.94.152.64/30 Amazon
+52.94.152.68/31 Amazon
+52.94.160.0/19 Amazon
+52.94.192.0/22 Amazon
+52.94.196.0/23 Amazon
+52.94.198.0/25 Amazon
+52.94.198.128/27 Amazon
+52.94.199.0/24 Amazon
+52.94.200.0/24 Amazon
+52.94.201.0/26 Amazon
+52.94.204.0/22 Amazon
+52.94.208.0/20 Amazon
+52.94.224.0/20 Amazon
+52.94.240.0/21 Amazon
+52.94.248.0/25 Amazon
+52.94.248.128/26 Amazon
+52.94.248.192/27 Amazon
+52.94.248.224/28 Amazon
+52.94.249.32/27 Amazon
+52.94.249.64/26 Amazon
+52.94.249.128/25 Amazon
+52.94.250.0/27 Amazon
+52.94.252.0/22 Amazon
+52.95.0.0/20 Amazon
+52.95.16.0/21 Amazon
+52.95.24.0/22 Amazon
+52.95.28.0/24 Amazon
+52.95.29.0/26 Amazon
+52.95.30.0/23 Amazon
+52.95.34.0/23 Amazon
+52.95.36.0/22 Amazon
+52.95.40.0/23 Amazon
+52.95.42.0/24 Amazon
+52.95.48.0/20 Amazon
+52.95.64.0/19 Amazon
+52.95.96.0/19 Amazon
+52.95.128.0/19 Amazon
+52.95.160.0/20 Amazon
+52.95.176.0/21 Amazon
+52.95.184.0/22 Amazon
+52.95.188.0/23 Amazon
+52.95.190.0/24 Amazon
+52.95.192.0/20 Amazon
+52.95.208.0/21 Amazon
+52.95.216.0/22 Amazon
+52.95.224.0/22 Amazon
+52.95.228.0/23 Amazon
+52.95.230.0/24 Amazon
+52.95.235.0/24 Amazon
+52.95.239.0/24 Amazon
+52.95.240.0/21 Amazon
+52.95.248.0/22 Amazon
+52.95.252.0/23 Amazon
+52.95.254.0/24 Amazon
+52.95.255.0/25 Amazon
+52.95.255.128/27 Amazon
+52.96.0.0/12 Microsoft
+52.112.0.0/14 Microsoft
+52.119.128.0/18 Amazon
+52.119.192.0/21 Amazon
+52.119.205.0/24 Amazon
+52.119.206.0/23 Amazon
+52.119.208.0/20 Amazon
+52.119.224.0/20 Amazon
+52.119.240.0/21 Amazon
+52.119.248.0/23 Amazon
+52.119.252.0/22 Amazon
+52.120.0.0/14 Microsoft
+52.124.128.0/17 Amazon
+52.125.0.0/16 Microsoft
+52.126.0.0/15 Microsoft
+52.132.0.0/14 Microsoft
+52.136.0.0/13 Microsoft
+52.144.133.32/27 Amazon
+52.144.192.0/24 Amazon
+52.144.193.0/25 Amazon
+52.144.193.128/26 Amazon
+52.144.194.0/24 Amazon
+52.144.195.0/26 Amazon
+52.144.196.192/26 Amazon
+52.144.197.128/25 Amazon
+52.144.199.128/26 Amazon
+52.144.200.64/26 Amazon
+52.144.200.128/26 Amazon
+52.144.201.64/26 Amazon
+52.144.201.128/26 Amazon
+52.144.205.0/26 Amazon
+52.144.208.0/30 Amazon
+52.144.208.64/26 Amazon
+52.144.208.128/25 Amazon
+52.144.209.0/24 Amazon
+52.144.210.0/24 Amazon
+52.144.211.0/25 Amazon
+52.144.211.128/26 Amazon
+52.144.211.192/29 Amazon
+52.144.211.200/30 Amazon
+52.144.212.64/26 Amazon
+52.144.212.192/26 Amazon
+52.144.213.64/26 Amazon
+52.144.214.128/26 Amazon
+52.144.215.0/30 Amazon
+52.144.215.192/29 Amazon
+52.144.215.200/30 Amazon
+52.144.216.0/29 Amazon
+52.144.216.8/30 Amazon
+52.144.218.0/25 Amazon
+52.144.223.64/26 Amazon
+52.144.223.128/26 Amazon
+52.144.224.64/26 Amazon
+52.144.224.128/25 Amazon
+52.144.225.0/25 Amazon
+52.144.225.128/26 Amazon
+52.144.227.64/26 Amazon
+52.144.227.192/26 Amazon
+52.144.228.0/30 Amazon
+52.144.228.64/26 Amazon
+52.144.228.128/25 Amazon
+52.144.229.0/25 Amazon
+52.144.230.0/26 Amazon
+52.144.231.64/26 Amazon
+52.144.233.64/29 Amazon
+52.144.233.128/29 Amazon
+52.144.233.192/26 Amazon
+52.145.0.0/16 Microsoft
+52.146.0.0/15 Microsoft
+52.148.0.0/14 Microsoft
+52.152.0.0/13 Microsoft
+52.160.0.0/11 Microsoft
+52.192.0.0/12 Amazon
+52.208.0.0/13 Amazon
+52.216.0.0/15 Amazon
+52.218.0.0/16 Amazon
+52.219.0.0/20 Amazon
+52.219.16.0/22 Amazon
+52.219.24.0/21 Amazon
+52.219.32.0/20 Amazon
+52.219.56.0/21 Amazon
+52.219.64.0/21 Amazon
+52.219.72.0/22 Amazon
+52.219.80.0/20 Amazon
+52.219.96.0/19 Amazon
+52.219.128.0/20 Amazon
+52.219.144.0/22 Amazon
+52.219.148.0/23 Amazon
+52.219.152.0/21 Amazon
+52.219.160.0/23 Amazon
+52.219.164.0/22 Amazon
+52.219.168.0/21 Amazon
+52.219.176.0/20 Amazon
+52.219.192.0/21 Amazon
+52.219.200.0/24 Amazon
+52.219.202.0/23 Amazon
+52.219.204.0/22 Amazon
+52.220.0.0/15 Amazon
+52.222.0.0/16 Amazon
+52.223.0.0/17 Amazon
+52.223.192.0/18 Twitch
+52.224.0.0/11 Microsoft
+54.64.0.0/12 Amazon
+54.80.0.0/12 Amazon
+54.144.0.0/12 Amazon
+54.148.0.0/14 Amazon
+54.152.0.0/13 Amazon
+54.160.0.0/11 Amazon
+54.168.0.0/13 Amazon
+54.176.0.0/12 Amazon
+54.192.0.0/12 Amazon
+54.193.0.0/16 Amazon
+54.194.0.0/15 Amazon
+54.196.0.0/14 Amazon
+54.200.0.0/13 Amazon
+54.208.0.0/13 Amazon
+54.210.0.0/15 Amazon
+54.212.0.0/14 Amazon
+54.216.0.0/14 Amazon
+54.218.0.0/15 Amazon
+54.220.0.0/15 Amazon
+54.222.0.0/19 Amazon
+54.222.32.0/21 Amazon
+54.222.48.0/21 Amazon
+54.222.57.0/24 Amazon
+54.222.58.0/28 Amazon
+54.222.58.32/27 Amazon
+54.222.59.0/24 Amazon
+54.222.64.0/21 Amazon
+54.222.76.0/22 Amazon
+54.222.80.0/21 Amazon
+54.222.128.0/17 Amazon
+54.223.0.0/16 Amazon
+54.224.0.0/14 Amazon
+54.228.0.0/15 Amazon
+54.230.0.0/16 Amazon
+54.231.0.0/16 Amazon
+54.232.0.0/14 Amazon
+54.236.0.0/15 Amazon
+54.238.0.0/16 Amazon
+54.239.0.0/24 Amazon
+54.239.1.0/25 Amazon
+54.239.1.128/26 Amazon
+54.239.1.192/27 Amazon
+54.239.1.224/28 Amazon
+54.239.2.0/23 Amazon
+54.239.4.0/22 Amazon
+54.239.8.0/21 Amazon
+54.239.16.0/20 Amazon
+54.239.32.0/21 Amazon
+54.239.40.152/29 Amazon
+54.239.48.0/20 Amazon
+54.239.64.0/21 Amazon
+54.239.96.0/24 Amazon
+54.239.98.0/23 Amazon
+54.239.100.0/23 Amazon
+54.239.102.162/31 Amazon
+54.239.102.232/30 Amazon
+54.239.102.236/31 Amazon
+54.239.104.0/21 Amazon
+54.239.112.0/23 Amazon
+54.239.115.0/25 Amazon
+54.239.116.0/22 Amazon
+54.239.120.0/21 Amazon
+54.239.128.0/18 Amazon
+54.239.192.0/19 Amazon
+54.240.17.0/24 Amazon
+54.240.128.0/18 Amazon
+54.240.192.0/21 Amazon
+54.240.200.0/24 Amazon
+54.240.202.0/23 Amazon
+54.240.204.0/22 Amazon
+54.240.208.0/20 Amazon
+54.240.225.0/24 Amazon
+54.240.226.0/23 Amazon
+54.240.228.0/22 Amazon
+54.240.232.0/22 Amazon
+54.240.236.1/32 Amazon
+54.240.236.2/32 Amazon
+54.240.236.5/32 Amazon
+54.240.236.6/32 Amazon
+54.240.236.9/32 Amazon
+54.240.236.10/32 Amazon
+54.240.236.13/32 Amazon
+54.240.236.14/32 Amazon
+54.240.236.17/32 Amazon
+54.240.236.18/32 Amazon
+54.240.236.21/32 Amazon
+54.240.236.22/32 Amazon
+54.240.236.25/32 Amazon
+54.240.236.26/32 Amazon
+54.240.236.29/32 Amazon
+54.240.236.30/32 Amazon
+54.240.236.33/32 Amazon
+54.240.236.34/32 Amazon
+54.240.236.37/32 Amazon
+54.240.236.38/32 Amazon
+54.240.236.41/32 Amazon
+54.240.236.42/32 Amazon
+54.240.236.45/32 Amazon
+54.240.236.46/32 Amazon
+54.240.236.49/32 Amazon
+54.240.236.50/32 Amazon
+54.240.236.53/32 Amazon
+54.240.236.54/32 Amazon
+54.240.236.57/32 Amazon
+54.240.236.58/32 Amazon
+54.240.236.61/32 Amazon
+54.240.236.62/32 Amazon
+54.240.236.65/32 Amazon
+54.240.236.66/32 Amazon
+54.240.236.69/32 Amazon
+54.240.236.70/32 Amazon
+54.240.236.73/32 Amazon
+54.240.236.74/32 Amazon
+54.240.236.77/32 Amazon
+54.240.236.78/32 Amazon
+54.240.236.81/32 Amazon
+54.240.236.82/32 Amazon
+54.240.236.85/32 Amazon
+54.240.236.86/32 Amazon
+54.240.236.89/32 Amazon
+54.240.236.90/32 Amazon
+54.240.236.93/32 Amazon
+54.240.236.94/32 Amazon
+54.240.241.0/24 Amazon
+54.240.244.0/22 Amazon
+54.240.248.0/21 Amazon
+54.241.0.0/16 Amazon
+54.242.0.0/15 Amazon
+54.244.0.0/14 Amazon
+54.248.0.0/13 Amazon
+55.0.0.0/8 US Army
+56.0.0.0/8 US Postal Service
+58.254.138.0/25 Amazon
+58.254.138.128/26 Amazon
+63.32.0.0/14 Amazon
+63.141.247.168/29 BitChute
+63.141.247.240/29 BitChute
+63.245.208.0/23 Mozilla
+63.246.112.0/22 Amazon
+63.246.119.0/24 Amazon
+63.250.192.0/19 Yahoo
+64.6.64.6/32 Neustar DNS
+64.6.65.6/32 Neustar DNS
+64.15.112.0/20 Google
+64.50.144.0/20 Liquid Web
+64.50.144.0/23 Liquid Web
+64.50.148.0/22 Liquid Web
+64.50.152.0/21 Liquid Web
+64.63.0.0/18 Twitter
+64.91.224.0/19 Liquid Web
+64.112.13.0/24 Dropbox
+64.120.2.0/24 Leaseweb
+64.120.4.0/22 Leaseweb
+64.120.16.0/22 Leaseweb
+64.120.48.0/22 Leaseweb
+64.120.65.0/24 Leaseweb
+64.120.68.0/23 Leaseweb
+64.120.106.0/24 Leaseweb
+64.120.123.0/24 Leaseweb
+64.120.128.0/17 Netflix
+64.187.128.0/20 Amazon
+64.225.0.0/17 Digital Ocean
+64.227.0.0/17 Digital Ocean
+64.227.128.0/18 Digital Ocean
+64.233.160.0/19 Google
+64.252.64.0/18 Amazon
+64.252.128.0/18 Amazon
+65.0.0.0/14 Amazon
+65.8.0.0/16 Amazon
+65.9.0.0/17 Amazon
+65.9.128.0/18 Amazon
+65.21.0.0/16 Hetzner
+65.108.0.0/15 Hetzner
+66.34.0.0/16 Amazon
+66.98.240.192/26 IBM
+66.102.0.0/20 Google
+66.111.48.0/22 WhatsApp
+66.114.192.0/18 Level 3
+66.147.128.0/18 Level 3
+66.147.192.0/19 Level 3
+66.157.0.0/16 Amazon
+66.162.0.0/16 Level 3
+66.165.64.0/18 Amazon
+66.170.128.0/20 Level 3
+66.175.208.0/20 Linode
+66.187.208.0/20 Cisco Systems, Inc
+66.187.224.0/20 Red Hat, Inc
+66.192.0.0/14 Level 3
+66.196.64.0/18 Yahoo
+66.197.128.0/17 Netflix
+66.199.0.0/19 Level 3
+66.211.160.0/21 eBay
+66.211.168.0/22 PayPal
+66.211.172.0/22 eBay
+66.211.176.0/20 eBay
+66.218.64.0/19 Yahoo
+66.220.144.0/20 Facebook
+66.221.0.0/16 Amazon
+66.243.0.0/17 Level 3
+66.243.128.0/18 Level 3
+66.248.200.0/22 Sucuri
+66.249.64.0/19 Google
+66.251.192.0/19 Level 3
+67.18.139.0/24 IBM
+67.19.0.0/24 IBM
+67.43.0.0/20 Liquid Web
+67.195.0.0/16 Yahoo
+67.202.0.0/18 Amazon
+67.205.128.0/18 Digital Ocean
+67.207.68.0/22 Digital Ocean
+67.207.72.0/21 Digital Ocean
+67.207.80.0/20 Digital Ocean
+67.220.224.0/19 Amazon
+67.225.128.0/17 Liquid Web
+67.227.128.0/17 Liquid Web
+68.66.112.0/20 Amazon
+68.66.211.0/24 Liquid Web
+68.79.0.0/18 Amazon
+68.183.0.0/17 Digital Ocean
+68.183.128.0/17 Digital Ocean
+69.16.173.0/24 StackPath
+69.16.174.0/23 StackPath
+69.16.176.0/20 StackPath
+69.16.192.0/18 Liquid Web
+69.16.222.0/23 Liquid Web
+69.30.192.0/18 WholeSale Internet
+69.30.200.200/29 BitChute
+69.30.230.64/29 BitChute
+69.30.230.96/29 BitChute
+69.30.241.40/29 BitChute
+69.30.241.48/29 BitChute
+69.30.243.152/29 BitChute
+69.30.243.168/29 BitChute
+69.30.245.232/29 BitChute
+69.30.253.16/29 BitChute
+69.53.224.0/19 Netflix
+69.55.49.0/24 Digital Ocean
+69.55.54.0/23 Digital Ocean
+69.55.59.64/26 Digital Ocean
+69.55.59.128/26 Digital Ocean
+69.55.59.192/27 Digital Ocean
+69.55.60.96/27 Digital Ocean
+69.55.60.128/26 Digital Ocean
+69.55.61.64/26 Digital Ocean
+69.55.62.0/26 Digital Ocean
+69.107.3.176/28 Amazon
+69.107.6.112/28 Amazon
+69.107.6.160/28 Amazon
+69.107.6.200/29 Amazon
+69.107.6.208/28 Amazon
+69.107.6.224/29 Amazon
+69.107.7.0/28 Amazon
+69.107.7.16/29 Amazon
+69.107.7.32/27 Amazon
+69.107.7.64/26 Amazon
+69.107.7.128/28 Amazon
+69.147.64.0/18 Yahoo
+69.147.236.0/24 Leaseweb
+69.160.56.0/24 Liquid Web
+69.167.128.0/18 Liquid Web
+69.171.224.0/19 Facebook
+69.197.128.0/18 WholeSale Internet
+69.197.138.24/29 BitChute
+69.197.182.184/29 BitChute
+69.230.192.0/18 Amazon
+69.231.128.0/18 Amazon
+69.234.192.0/18 Amazon
+69.235.128.0/18 Amazon
+70.32.34.0/24 Leaseweb
+70.32.128.0/19 Google
+70.84.160.0/24 IBM
+70.85.125.0/24 IBM
+70.132.0.0/18 Amazon
+70.224.192.0/18 Amazon
+70.232.64.0/18 Amazon
+71.131.192.0/18 Amazon
+71.132.0.0/18 Amazon
+71.137.0.0/22 Amazon
+71.137.4.0/24 Amazon
+71.137.8.0/22 Amazon
+71.152.0.0/17 Amazon
+72.14.192.0/18 Google
+72.21.80.0/20 MCI
+72.21.192.0/19 Amazon
+72.41.0.0/20 Amazon
+72.44.32.0/19 Amazon
+72.52.128.0/17 Liquid Web
+72.246.0.0/15 Akamai
+73.0.0.0/8 Comcast
+74.6.0.0/16 Yahoo
+74.82.42.42/32 Hurricane Electric DNS
+74.91.28.208/29 BitChute
+74.91.29.208/29 BitChute
+74.114.24.0/21 Google
+74.121.124.0/22 Akamai
+74.125.0.0/16 Google
+74.127.0.0/18 Amazon
+74.160.0.0/14 Microsoft
+74.176.0.0/14 Microsoft
+74.190.0.0/16 Amazon
+74.202.0.0/15 Level 3
+74.207.224.0/19 Linode
+74.208.0.0/16 Ionos
+74.209.128.0/20 StackPath
+74.224.0.0/14 Microsoft
+74.230.0.0/16 Amazon
+74.234.0.0/15 Microsoft
+74.240.0.0/14 Microsoft
+74.248.0.0/15 Microsoft
+74.250.0.0/16 Amazon
+75.2.0.0/17 Amazon
+75.101.128.0/17 Amazon
+75.125.126.8/32 IBM
+76.13.0.0/16 Yahoo
+76.76.2.0/24 ControlD DNS
+76.76.10.0/24 ControlD DNS
+76.76.19.0/24 Alternate DNS
+76.223.0.0/17 Amazon
+76.223.122.150/32 Alternate DNS
+77.88.8.0/24 Yandex DNS
+78.46.0.0/15 Hetzner
+79.125.0.0/17 Amazon
+80.80.80.0/23 Freenom DNS Cloud
+80.240.128.0/20 Digital Ocean
+82.196.0.0/20 Digital Ocean
+84.200.69.80/32 DSN Watch
+84.200.70.40/32 DNS Watch
+85.10.192.0/18 Hetzner
+87.238.80.0/21 Amazon
+87.250.254.0/24 Yandex
+88.99.0.0/16 Hetzner
+88.198.0.0/16 Hetzner
+91.105.192.0/23 Telegram
+91.107.128.0/17 Hetzner
+91.108.4.0/22 Telegram
+91.108.8.0/21 Telegram
+91.108.16.0/21 Telegram
+91.108.56.0/22 Telegram
+91.189.88.0/24 Ubuntu One
+91.189.90.0/23 Ubuntu One
+91.189.92.0/23 Ubuntu One
+91.189.94.0/24 Ubuntu One
+92.122.160.0/20 Akamai
+94.130.0.0/16 Hetzner
+94.140.14.0/23 Adguard DNS
+95.85.1.0/24 Digital Ocean
+95.85.2.0/23 Digital Ocean
+95.85.4.0/22 Digital Ocean
+95.85.8.0/21 Digital Ocean
+95.85.16.0/20 Digital Ocean
+95.85.32.0/19 Digital Ocean
+95.161.64.0/20 Telegram
+95.216.0.0/15 Hetzner
+96.6.0.0/15 Akamai
+96.16.0.0/15 Akamai
+96.30.0.0/18 Liquid Web
+96.127.0.0/17 Amazon
+98.136.0.0/14 Yahoo
+99.77.0.0/18 Amazon
+99.77.128.0/18 Amazon
+99.77.247.0/24 Amazon
+99.77.250.0/24 Amazon
+99.77.253.0/24 Amazon
+99.77.254.0/24 Amazon
+99.78.128.0/19 Amazon
+99.78.160.0/21 Amazon
+99.78.168.0/22 Amazon
+99.78.172.0/24 Amazon
+99.78.176.0/20 Amazon
+99.78.192.0/21 Amazon
+99.78.208.0/20 Amazon
+99.78.228.0/22 Amazon
+99.78.232.0/21 Amazon
+99.78.240.0/20 Amazon
+99.79.0.0/16 Amazon
+99.80.0.0/15 Amazon
+99.82.128.0/19 Amazon
+99.82.160.0/19 Amazon
+99.83.64.0/19 Amazon
+99.83.96.0/22 Amazon
+99.83.100.0/23 Amazon
+99.83.112.0/21 Amazon
+99.83.120.0/22 Amazon
+99.83.128.0/17 Amazon
+99.84.0.0/16 Amazon
+99.86.0.0/16 Amazon
+99.87.0.0/19 Amazon
+99.87.32.0/22 Amazon
+99.150.0.0/17 Amazon
+99.151.64.0/18 Amazon
+99.151.128.0/20 Amazon
+99.151.144.0/21 Amazon
+99.181.64.0/18 Twitch
+100.20.0.0/14 Amazon
+100.24.0.0/13 Amazon
+100.64.0.0/10 Carrier-grade NAT
+103.1.172.0/22 GoDaddy
+103.1.172.0/24 GoDaddy
+103.1.174.0/23 GoDaddy
+103.4.8.0/21 Amazon
+103.8.172.0/22 Amazon
+103.10.124.0/23 Steam
+103.21.244.0/22 Cloudflare
+103.22.200.0/22 Cloudflare
+103.28.54.0/24 Steam
+103.28.248.0/22 Imperva
+103.29.68.0/22 Linode
+103.31.4.0/22 Cloudflare
+103.53.48.0/23 Twitch
+103.244.50.0/24 Fastly
+103.245.222.0/23 Fastly
+103.245.224.0/24 Fastly
+103.246.148.0/22 Amazon
+103.253.145.0/24 Digital Ocean
+103.253.146.0/23 Digital Ocean
+104.16.0.0/12 Cloudflare
+104.24.0.0/14 Cloudflare
+104.64.0.0/10 Akamai
+104.131.0.0/16 Digital Ocean
+104.154.0.0/15 Google
+104.156.80.0/20 Fastly
+104.196.0.0/14 Google
+104.200.16.0/21 Linode
+104.200.24.0/22 Linode
+104.200.25.0/24 Linode
+104.200.26.0/23 Linode
+104.200.28.0/22 Linode
+104.236.0.0/16 Digital Ocean
+104.237.128.0/20 Linode
+104.237.144.0/21 Linode
+104.237.152.0/21 Linode
+104.237.152.0/22 Linode
+104.237.156.0/22 Linode
+104.237.160.0/19 Google
+104.238.64.0/18 GoDaddy
+104.238.64.0/19 GoDaddy
+104.238.64.0/22 GoDaddy
+104.238.64.0/24 GoDaddy
+104.244.40.0/21 Twitter
+104.248.0.0/17 Digital Ocean
+104.248.128.0/17 Digital Ocean
+104.255.56.11/32 Amazon
+104.255.56.12/32 Amazon
+104.255.59.81/32 Amazon
+104.255.59.82/31 Amazon
+104.255.59.85/32 Amazon
+104.255.59.86/31 Amazon
+104.255.59.88/32 Amazon
+104.255.59.91/32 Amazon
+104.255.59.101/32 Amazon
+104.255.59.102/31 Amazon
+104.255.59.104/31 Amazon
+104.255.59.106/32 Amazon
+104.255.59.114/31 Amazon
+104.255.59.118/31 Amazon
+104.255.59.122/32 Amazon
+104.255.59.130/31 Amazon
+104.255.59.132/30 Amazon
+104.255.59.136/30 Amazon
+107.20.0.0/14 Amazon
+107.150.32.0/19 BitChute
+107.150.35.192/29 BitChute
+107.150.45.120/29 BitChute
+107.154.0.0/16 Imperva
+107.167.160.0/19 Google
+107.170.0.0/17 Digital Ocean
+107.170.128.0/18 Digital Ocean
+107.170.192.0/19 Digital Ocean
+107.170.224.0/19 Digital Ocean
+107.176.0.0/15 Amazon
+107.178.192.0/18 Google
+107.180.0.0/17 GoDaddy
+107.180.0.0/18 GoDaddy
+107.180.64.0/19 GoDaddy
+107.180.100.0/22 GoDaddy
+107.180.104.0/21 GoDaddy
+107.180.120.0/22 GoDaddy
+107.189.64.0/18 OVH
+108.3.64.0/18 MCI
+108.3.128.0/17 MCI
+108.4.0.0/16 MCI
+108.29.0.0/16 MCI
+108.30.0.0/15 MCI
+108.32.0.0/16 MCI
+108.33.254.0/23 MCI
+108.34.16.0/20 MCI
+108.34.32.0/19 MCI
+108.34.64.0/18 MCI
+108.34.128.0/17 MCI
+108.35.0.0/16 MCI
+108.36.0.0/15 MCI
+108.39.0.0/16 MCI
+108.40.0.0/17 MCI
+108.41.0.0/16 MCI
+108.44.0.0/15 MCI
+108.46.0.0/16 MCI
+108.59.80.0/20 Google
+108.62.5.0/24 Leaseweb
+108.62.56.0/21 Leaseweb
+108.62.152.0/21 Leaseweb
+108.62.192.0/22 Leaseweb
+108.62.197.0/24 Leaseweb
+108.62.199.0/24 Leaseweb
+108.62.220.0/22 Leaseweb
+108.128.0.0/13 Amazon
+108.136.0.0/14 Amazon
+108.156.0.0/14 Amazon
+108.160.160.0/20 Dropbox
+108.162.192.0/18 Cloudflare
+108.166.224.0/19 Amazon
+108.168.157.0/24 IBM
+108.170.192.0/18 Google
+108.175.32.0/20 Netflix
+108.175.48.0/20 Amazon
+108.177.0.0/17 Google
+108.177.128.0/22 Leaseweb
+108.177.216.0/22 Leaseweb
+108.177.244.0/22 Leaseweb
+109.74.192.0/20 Linode
+109.237.24.0/22 Linode
+116.129.226.0/25 Amazon
+116.129.226.128/26 Amazon
+116.202.0.0/15 Hetzner
+118.139.160.0/19 GoDaddy
+118.139.160.0/21 GoDaddy
+118.193.97.64/26 Amazon
+118.193.97.128/25 Amazon
+119.147.182.0/25 Amazon
+119.147.182.128/26 Amazon
+120.52.12.64/26 Amazon
+120.52.22.96/27 Amazon
+120.52.39.128/27 Amazon
+120.52.153.192/26 Amazon
+120.232.236.0/25 Amazon
+120.232.236.128/26 Amazon
+120.253.240.192/26 Amazon
+120.253.241.160/27 Amazon
+120.253.245.128/26 Amazon
+120.253.245.192/27 Amazon
+122.248.192.0/18 Amazon
+127.0.0.0/8 Local host
+128.140.0.0/17 Hetzner
+128.168.117.0/24 IBM
+128.168.118.0/23 IBM
+128.199.0.0/16 Digital Ocean
+129.134.0.0/16 Facebook
+129.144.0.0/12 Oracle
+130.176.0.0/17 Amazon
+130.176.128.0/18 Amazon
+130.176.192.0/19 Amazon
+130.176.224.0/20 Amazon
+130.176.254.0/23 Amazon
+130.198.117.0/24 IBM
+130.198.118.0/23 IBM
+130.211.0.0/16 Google
+131.0.72.0/22 Cloudflare
+131.125.128.0/17 Imperva
+132.148.0.0/16 GoDaddy
+132.148.16.0/20 GoDaddy
+132.148.16.0/21 GoDaddy
+132.148.24.0/22 GoDaddy
+132.148.32.0/21 GoDaddy
+132.148.164.0/22 GoDaddy
+132.148.184.0/21 GoDaddy
+132.148.192.0/20 GoDaddy
+134.122.0.0/17 Digital Ocean
+134.209.0.0/17 Digital Ocean
+134.209.128.0/17 Digital Ocean
+135.90.117.0/24 IBM
+135.90.118.0/23 IBM
+135.125.0.0/16 OVH
+135.148.0.0/16 OVH
+135.181.0.0/16 Hetzner
+136.112.0.0/12 Google
+137.74.0.0/16 OVH
+137.184.0.0/17 Digital Ocean
+137.184.128.0/18 Digital Ocean
+137.184.192.0/19 Digital Ocean
+137.184.224.0/20 Digital Ocean
+137.184.240.0/21 Digital Ocean
+137.184.248.0/22 Digital Ocean
+137.184.254.0/24 Digital Ocean
+138.68.0.0/19 Digital Ocean
+138.68.36.0/22 Digital Ocean
+138.68.40.0/21 Digital Ocean
+138.68.48.0/20 Digital Ocean
+138.68.64.0/18 Digital Ocean
+138.68.128.0/17 Digital Ocean
+138.197.0.0/17 Digital Ocean
+138.197.128.0/18 Digital Ocean
+138.197.192.0/19 Digital Ocean
+138.197.224.0/20 Digital Ocean
+138.197.240.0/22 Digital Ocean
+138.197.252.0/22 Digital Ocean
+139.59.0.0/17 Digital Ocean
+139.59.128.0/17 Digital Ocean
+139.99.0.0/16 OVH
+139.144.0.0/20 Linode
+139.144.16.0/20  Linode
+139.144.32.0/19 Linode
+139.144.64.0/18 Linode
+139.144.128.0/18 Linode
+139.144.192.0/19 Linode
+139.144.224.0/20 Linode
+139.144.240.0/22 Linode
+139.162.0.0/16 Linode
+139.177.176.0/20 Linode
+139.177.192.0/20 Linode
+140.82.112.0/20 GitHub
+140.179.0.0/16 Amazon
+141.0.169.0/24 Digital Ocean
+141.0.170.0/24 Digital Ocean
+141.94.0.0/15 OVH
+141.101.64.0/18 Cloudflare
+141.125.117.0/24 IBM
+141.125.118.0/23 IBM
+141.193.213.0/24 WPEngine
+142.4.160.0/26 Amazon
+142.4.160.64/27 Amazon
+142.4.160.96/28 Amazon
+142.4.160.112/29 Amazon
+142.4.192.0/19 OVH
+142.44.128.0/17 OVH
+142.54.160.0/19 WholeSale Internet
+142.54.180.104/29 BitChute
+142.54.181.184/29 BitChute
+142.54.188.112/29 BitChute
+142.54.189.192/29 BitChute
+142.91.88.0/21 Leaseweb
+142.91.116.0/22 Leaseweb
+142.91.208.0/22 Leaseweb
+142.93.0.0/16 Digital Ocean
+142.132.128.0/17 Hetzner
+142.234.104.0/21 Leaseweb
+142.234.168.0/21 Leaseweb
+142.234.180.0/22 Leaseweb
+142.234.188.0/22 Leaseweb
+142.234.232.0/21 Leaseweb
+142.234.248.0/22 Leaseweb
+142.250.0.0/15 Google
+143.55.64.0/20 GitHub
+143.110.128.0/17 Digital Ocean
+143.198.0.0/17 Digital Ocean
+143.198.128.0/18 Digital Ocean
+143.198.192.0/19 Digital Ocean
+143.198.224.0/20 Digital Ocean
+143.198.240.0/21 Digital Ocean
+143.198.248.0/22 Digital Ocean
+143.204.0.0/16 Amazon
+143.244.128.0/18 Digital Ocean
+143.244.196.0/22 Digital Ocean
+143.244.200.0/21 Digital Ocean
+143.244.208.0/21 Digital Ocean
+143.244.218.0/24 Digital Ocean
+143.244.220.0/22 Digital Ocean
+144.126.192.0/18 Digital Ocean
+144.217.0.0/16 OVH
+144.220.0.0/16 Amazon
+145.239.0.0/16 OVH
+146.59.0.0/16 OVH
+146.59.0.0/17 OVH
+146.66.152.0/24 Steam
+146.66.155.0/24 Steam
+146.75.0.0/16 Fastly
+146.148.0.0/17 Google
+146.185.128.0/19 Digital Ocean
+146.185.160.0/19 Digital Ocean
+146.190.0.0/18 Digital Ocean
+146.190.192.0/22 Digital Ocean
+146.190.224.0/19 Digital Ocean
+146.255.56.96/29 Applied Privacy DNS
+147.135.0.0/16 OVH
+147.182.128.0/17 Digital Ocean
+147.255.224.0/21 Leaseweb
+148.66.128.0/19 GoDaddy
+148.66.128.0/22 GoDaddy
+148.66.136.0/21 GoDaddy
+148.66.144.0/21 GoDaddy
+148.72.0.0/17 GoDaddy
+148.72.4.0/22 GoDaddy
+148.72.16.0/22 GoDaddy
+148.72.32.0/21 GoDaddy
+148.72.32.0/23 GoDaddy
+148.72.34.0/24 GoDaddy
+148.72.36.0/24 GoDaddy
+148.72.44.0/22 GoDaddy
+148.72.88.0/22 GoDaddy
+148.72.204.0/22 GoDaddy
+148.72.204.0/24 GoDaddy
+148.72.206.0/23 GoDaddy
+148.72.208.0/21 GoDaddy
+148.72.220.0/22 GoDaddy
+148.72.224.0/19 GoDaddy
+148.72.224.0/20 GoDaddy
+148.72.240.0/21 GoDaddy
+148.113.0.0/18 OVH
+148.113.128.0/17 OVH
+149.56.0.0/16 OVH
+149.81.117.0/24 IBM
+149.81.118.0/23 IBM
+149.112.112.0/24 Quad9 DNS
+149.112.120.0/21 CIRA DNS Canada
+149.126.72.0/21 Imperva
+149.154.160.0/20 Telegram
+149.202.0.0/16 OVH
+150.222.0.16/30 Amazon
+150.222.2.0/24 Amazon
+150.222.3.176/28 Amazon
+150.222.3.192/26 Amazon
+150.222.5.0/24 Amazon
+150.222.6.0/23 Amazon
+150.222.10.0/24 Amazon
+150.222.11.0/31 Amazon
+150.222.11.74/31 Amazon
+150.222.11.76/30 Amazon
+150.222.11.80/31 Amazon
+150.222.11.84/30 Amazon
+150.222.11.88/29 Amazon
+150.222.11.96/31 Amazon
+150.222.12.0/23 Amazon
+150.222.14.72/31 Amazon
+150.222.15.124/30 Amazon
+150.222.15.128/30 Amazon
+150.222.28.17/32 Amazon
+150.222.28.18/31 Amazon
+150.222.28.104/29 Amazon
+150.222.28.112/28 Amazon
+150.222.28.128/28 Amazon
+150.222.66.0/23 Amazon
+150.222.69.0/24 Amazon
+150.222.70.0/23 Amazon
+150.222.72.0/21 Amazon
+150.222.80.0/22 Amazon
+150.222.84.0/23 Amazon
+150.222.87.0/24 Amazon
+150.222.88.0/21 Amazon
+150.222.96.0/22 Amazon
+150.222.100.0/23 Amazon
+150.222.102.0/24 Amazon
+150.222.104.0/23 Amazon
+150.222.106.0/24 Amazon
+150.222.108.0/23 Amazon
+150.222.110.0/24 Amazon
+150.222.112.0/21 Amazon
+150.222.120.20/31 Amazon
+150.222.120.62/31 Amazon
+150.222.120.224/29 Amazon
+150.222.120.232/30 Amazon
+150.222.120.240/29 Amazon
+150.222.120.248/30 Amazon
+150.222.120.252/32 Amazon
+150.222.120.255/32 Amazon
+150.222.121.0/24 Amazon
+150.222.122.92/30 Amazon
+150.222.122.96/28 Amazon
+150.222.122.112/30 Amazon
+150.222.122.116/31 Amazon
+150.222.129.19/32 Amazon
+150.222.129.20/31 Amazon
+150.222.129.62/31 Amazon
+150.222.129.64/30 Amazon
+150.222.129.69/32 Amazon
+150.222.129.110/31 Amazon
+150.222.129.112/28 Amazon
+150.222.129.128/28 Amazon
+150.222.129.144/30 Amazon
+150.222.129.152/29 Amazon
+150.222.129.240/29 Amazon
+150.222.129.248/30 Amazon
+150.222.129.252/32 Amazon
+150.222.129.255/32 Amazon
+150.222.133.0/24 Amazon
+150.222.134.0/23 Amazon
+150.222.136.0/24 Amazon
+150.222.138.0/24 Amazon
+150.222.139.116/30 Amazon
+150.222.139.120/29 Amazon
+150.222.140.0/22 Amazon
+150.222.164.208/30 Amazon
+150.222.164.220/31 Amazon
+150.222.164.222/32 Amazon
+150.222.176.0/22 Amazon
+150.222.180.0/24 Amazon
+150.222.196.0/24 Amazon
+150.222.199.0/25 Amazon
+150.222.202.0/23 Amazon
+150.222.204.0/22 Amazon
+150.222.208.64/27 Amazon
+150.222.208.96/31 Amazon
+150.222.210.0/24 Amazon
+150.222.212.0/24 Amazon
+150.222.213.40/31 Amazon
+150.222.214.0/23 Amazon
+150.222.217.17/32 Amazon
+150.222.217.226/31 Amazon
+150.222.217.228/30 Amazon
+150.222.217.232/30 Amazon
+150.222.217.248/30 Amazon
+150.222.218.0/23 Amazon
+150.222.220.0/22 Amazon
+150.222.224.0/24 Amazon
+150.222.226.0/23 Amazon
+150.222.228.0/23 Amazon
+150.222.230.92/30 Amazon
+150.222.230.96/28 Amazon
+150.222.230.112/29 Amazon
+150.222.230.120/30 Amazon
+150.222.230.124/31 Amazon
+150.222.231.0/24 Amazon
+150.222.232.51/32 Amazon
+150.222.232.88/32 Amazon
+150.222.232.94/31 Amazon
+150.222.232.96/28 Amazon
+150.222.232.112/29 Amazon
+150.222.232.120/31 Amazon
+150.222.233.0/24 Amazon
+150.222.234.0/27 Amazon
+150.222.234.32/27 Amazon
+150.222.234.64/28 Amazon
+150.222.234.80/29 Amazon
+150.222.234.96/27 Amazon
+150.222.234.128/28 Amazon
+150.222.235.0/24 Amazon
+150.222.236.0/23 Amazon
+150.222.239.0/24 Amazon
+150.222.240.131/32 Amazon
+150.222.240.135/32 Amazon
+150.222.240.137/32 Amazon
+150.222.240.161/32 Amazon
+150.222.240.207/32 Amazon
+150.222.240.237/32 Amazon
+150.222.240.245/32 Amazon
+150.222.240.247/32 Amazon
+150.222.240.249/32 Amazon
+150.222.240.251/32 Amazon
+150.222.242.84/31 Amazon
+150.222.242.97/32 Amazon
+150.222.242.99/32 Amazon
+150.222.242.214/31 Amazon
+150.222.242.227/32 Amazon
+150.222.242.229/32 Amazon
+150.222.242.231/32 Amazon
+150.222.242.233/32 Amazon
+150.222.243.9/32 Amazon
+150.222.243.11/32 Amazon
+150.222.243.13/32 Amazon
+150.222.243.15/32 Amazon
+150.222.243.17/32 Amazon
+150.222.243.19/32 Amazon
+150.222.243.33/32 Amazon
+150.222.243.35/32 Amazon
+150.222.243.37/32 Amazon
+150.222.243.39/32 Amazon
+150.222.243.41/32 Amazon
+150.222.243.43/32 Amazon
+150.222.243.45/32 Amazon
+150.222.243.47/32 Amazon
+150.222.243.51/32 Amazon
+150.222.243.53/32 Amazon
+150.222.243.55/32 Amazon
+150.222.243.57/32 Amazon
+150.222.243.59/32 Amazon
+150.222.243.177/32 Amazon
+150.222.244.35/32 Amazon
+150.222.244.37/32 Amazon
+150.222.245.122/31 Amazon
+150.222.252.244/30 Amazon
+150.222.252.248/30 Amazon
+151.80.0.0/16 OVH
+151.101.0.0/16 Fastly
+151.139.0.0/16 StackPath
+151.236.216.0/21 Linode
+152.176.0.0/12 MCI
+152.192.0.0/13 MCI
+152.228.128.0/17 OVH
+153.254.86.0/24 Steam
+155.133.224.0/22 Steam
+155.133.230.0/24 Steam
+155.133.232.0/23 Steam
+155.133.234.0/24 Steam
+155.133.236.0/22 Steam
+155.133.240.0/23 Steam
+155.133.245.0/24 Steam
+155.133.246.0/24 Steam
+155.133.248.0/21 Steam
+157.52.64.0/18 Fastly
+157.90.0.0/16 Hetzner
+157.175.0.0/16 Amazon
+157.230.0.0/17 Digital Ocean
+157.230.128.0/17 Digital Ocean
+157.240.0.0/16 Facebook
+157.241.0.0/16 Amazon
+157.245.0.0/17 Digital Ocean
+157.245.128.0/17 Digital Ocean
+158.69.0.0/16 OVH
+158.85.117.0/24 IBM
+158.85.118.0/23 IBM
+158.175.117.0/24 IBM
+158.175.127.0/24 IBM
+158.176.117.0/24 IBM
+158.176.118.0/23 IBM
+159.8.117.0/24 IBM
+159.8.118.0/23 IBM
+159.8.197.0/24 IBM
+159.8.198.0/23 IBM
+159.65.0.0/17 Digital Ocean
+159.65.128.0/17 Digital Ocean
+159.69.0.0/16 Hetzner
+159.89.0.0/19 Digital Ocean
+159.89.32.0/20 Digital Ocean
+159.89.48.0/21 Digital Ocean
+159.89.64.0/18 Digital Ocean
+159.89.128.0/17 Digital Ocean
+159.122.117.0/24 IBM
+159.122.118.0/23 IBM
+159.122.137.0/24 IBM
+159.122.138.0/23 IBM
+159.135.48.0/20 Liquid Web
+159.203.0.0/17 Digital Ocean
+159.203.128.0/17 Digital Ocean
+159.223.0.0/17 Digital Ocean
+159.223.128.0/18 Digital Ocean
+159.223.192.0/19 Digital Ocean
+159.223.224.0/20 Digital Ocean
+160.1.0.0/16 Amazon
+160.153.32.0/19 GoDaddy
+160.153.64.0/18 GoDaddy
+160.153.64.0/19 GoDaddy
+160.153.96.0/19 GoDaddy
+161.35.0.0/17 Digital Ocean
+161.35.128.0/17 Digital Ocean
+161.156.117.0/24 IBM
+161.156.118.0/24 IBM
+161.188.128.0/19 Amazon
+161.188.160.0/23 Amazon
+161.189.0.0/16 Amazon
+161.202.117.0/24 IBM
+161.202.118.0/23 IBM
+162.19.0.0/16 OVH
+162.55.0.0/16 Hetzner
+162.125.0.0/16 Dropbox
+162.158.0.0/15 Cloudflare
+162.212.134.0/24 Liquid Web
+162.213.32.0/22 Ubuntu One
+162.213.232.0/22 Amazon
+162.216.16.0/22  Linode
+162.216.148.0/22 Google
+162.222.148.0/22 Amazon
+162.222.176.0/21 Google
+162.243.0.0/16 Digital Ocean
+162.250.236.0/22 Amazon
+162.252.104.0/22 Liquid Web
+162.254.192.0/21 Steam
+163.47.8.0/22 Digital Ocean
+163.68.118.0/24 IBM
+163.69.118.0/24 IBM
+163.73.118.0/24 IBM
+163.74.118.0/23 IBM
+163.75.118.0/23 IBM
+164.90.128.0/18 Digital Ocean
+164.90.192.0/19 Digital Ocean
+164.90.224.0/20 Digital Ocean
+164.90.240.0/21 Digital Ocean
+164.90.252.0/22 Digital Ocean
+164.92.64.0/18 Digital Ocean
+164.92.128.0/17 Digital Ocean
+164.132.0.0/16 OVH
+165.22.0.0/16 Digital Ocean
+165.192.117.0/24 IBM
+165.192.118.0/23 IBM
+165.227.0.0/17 Digital Ocean
+165.227.128.0/17 Digital Ocean
+165.232.32.0/19 Digital Ocean
+165.232.64.0/18 Digital Ocean
+165.232.128.0/18 Digital Ocean
+166.62.0.0/19 GoDaddy
+166.62.0.0/22 GoDaddy
+166.62.0.0/23 GoDaddy
+166.62.2.0/23 GoDaddy
+166.62.4.0/22 GoDaddy
+166.62.4.0/23 GoDaddy
+166.62.6.0/23 GoDaddy
+166.62.8.0/22 GoDaddy
+166.62.8.0/23 GoDaddy
+166.62.10.0/23 GoDaddy
+166.62.12.0/22 GoDaddy
+166.62.12.0/23 GoDaddy
+166.62.15.0/24 GoDaddy
+166.62.16.0/22 GoDaddy
+166.62.17.0/24 GoDaddy
+166.62.20.0/22 GoDaddy
+166.62.23.0/24 GoDaddy
+166.62.24.0/22 GoDaddy
+166.62.24.0/23 GoDaddy
+166.62.26.0/23 GoDaddy
+166.62.28.0/22 GoDaddy
+166.62.32.0/19 GoDaddy
+166.62.32.0/20 GoDaddy
+166.62.52.0/22 GoDaddy
+166.62.56.0/21 GoDaddy
+166.62.64.0/18 GoDaddy
+166.62.64.0/19 GoDaddy
+166.62.80.0/21 GoDaddy
+166.62.88.0/22 GoDaddy
+166.62.100.0/22 GoDaddy
+166.62.112.0/20 GoDaddy
+166.62.116.0/22 GoDaddy
+166.62.120.0/22 GoDaddy
+167.71.0.0/16 Digital Ocean
+167.82.0.0/17 Fastly
+167.82.128.0/20 Fastly
+167.82.160.0/20 Fastly
+167.82.224.0/20 Fastly
+167.99.0.0/17 Digital Ocean
+167.99.128.0/17 Digital Ocean
+167.114.0.0/17 OVH
+167.114.128.0/18 OVH
+167.114.192.0/19 OVH
+167.172.0.0/17 Digital Ocean
+167.172.128.0/17 Digital Ocean
+167.233.0.0/16 Hetzner
+167.235.0.0/16 Hetzner
+168.1.17.0/24 IBM
+168.1.18.0/23 IBM
+168.61.0.0/16 Microsoft
+168.62.0.0/15 Microsoft
+168.119.0.0/16 Hetzner
+169.38.117.0/24 IBM
+169.38.118.0/23 IBM
+169.45.117.0/24 IBM
+169.45.118.0/23 IBM
+169.46.117.0/24 IBM
+169.46.118.0/23 IBM
+169.46.187.0/24 IBM
+169.47.117.0/24 IBM
+169.47.118.0/23 IBM
+169.48.117.0/24 IBM
+169.48.118.0/24 IBM
+169.54.27.0/24 IBM
+169.54.117.0/24 IBM
+169.54.118.0/23 IBM
+169.55.117.0/24 IBM
+169.55.118.0/23 IBM
+169.57.137.0/24 IBM
+169.57.138.0/23 IBM
+169.60.117.0/24 IBM
+169.60.118.0/23 IBM
+169.61.117.0/24 IBM
+169.61.118.0/23 IBM
+169.62.118.0/24 IBM
+169.254.0.0/16 Local link
+170.64.128.0/19 Digital Ocean
+170.64.248.0/21 Digital Ocean
+170.187.128.0/23 Linode
+170.187.131.0/24 Linode
+170.187.132.0/24 Linode
+170.187.134.0/23 Linode
+170.187.136.0/21 Linode
+170.187.144.0/20 Linode
+170.187.160.0/19 Linode
+170.187.192.0/18 Linode
+172.16.0.0/12 Local network
+172.64.0.0/13 Cloudflare
+172.96.97.0/24 Amazon
+172.96.98.0/24 Amazon
+172.96.110.0/24 Amazon
+172.98.56.0/22 Rumble
+172.104.0.0/15 Linode
+172.104.4.0/22 Linode
+172.104.8.0/21 Linode
+172.104.32.0/19 Linode
+172.104.64.0/18 Linode
+172.104.128.0/18 Linode
+172.104.192.0/21 Linode
+172.104.200.0/22 Linode
+172.104.205.0/24 Linode
+172.104.206.0/23 Linode
+172.104.208.0/20 Linode
+172.104.220.0/24 Linode
+172.104.224.0/19 Linode
+172.105.0.0/19 Linode
+172.105.112.0/20 Linode
+172.105.128.0/23 Linode
+172.110.32.0/21 Google
+172.111.64.0/18 Fastly
+172.217.0.0/16 Google
+172.241.120.0/22 Leaseweb
+172.241.136.0/22 Leaseweb
+172.241.156.0/22 Leaseweb
+172.241.200.0/22 Leaseweb
+172.253.0.0/16 Google
+172.255.59.0/24 Liquid Web
+173.192.117.0/24 IBM
+173.192.118.0/23 IBM
+173.194.0.0/16 Google
+173.199.128.0/18 Liquid Web
+173.208.32.0/21 Leaseweb
+173.208.118.0/24 Leaseweb
+173.208.128.0/17 WholeSale Internet
+173.208.154.8/29 BitChute
+173.208.154.160/29 BitChute
+173.208.176.128/29 BitChute
+173.208.185.200/29 BitChute
+173.208.203.224/29 BitChute
+173.208.203.248/29 BitChute
+173.208.211.224/29 BitChute
+173.208.216.40/29 BitChute
+173.208.219.112/29 BitChute
+173.208.246.160/29 BitChute
+173.222.0.0/15 Akamai
+173.234.80.0/22 Leaseweb
+173.234.88.0/23 Leaseweb
+173.234.180.0/22 Leaseweb
+173.245.48.0/20 Cloudflare
+173.255.112.0/20 Google
+173.255.192.0/18 Linode
+174.34.144.0/23 Leaseweb
+174.129.0.0/16 Amazon
+174.133.117.0/24 IBM
+174.133.118.0/23 IBM
+174.138.0.0/17 Digital Ocean
+175.41.128.0/17 Amazon
+176.9.0.0/16 Hetzner
+176.31.0.0/16 OVH
+176.32.64.0/19 Amazon
+176.32.96.0/20 Amazon
+176.32.112.0/21 Amazon
+176.32.120.0/22 Amazon
+176.32.124.128/25 Amazon
+176.32.125.0/25 Amazon
+176.32.125.128/26 Amazon
+176.32.125.192/26 Amazon
+176.34.0.0/16 Amazon
+176.103.128.0/19 Adguard DNS
+177.71.128.0/17 Amazon
+177.72.240.0/21 Amazon
+178.32.0.0/15 OVH
+178.62.0.0/16 Digital Ocean
+178.63.0.0/16 Hetzner
+178.128.0.0/17 Digital Ocean
+178.128.128.0/17 Digital Ocean
+178.154.131.0/24 Yandex
+178.236.0.0/20 Amazon
+180.163.57.0/25 Amazon
+180.163.57.128/26 Amazon
+182.22.0.0/17 Yahoo Japan
+183.79.0.0/16 Yahoo Japan
+184.24.0.0/13 Akamai
+184.50.0.0/15 Akamai
+184.72.0.0/15 Amazon
+184.84.0.0/14 Akamai
+184.106.55.0/24 Liquid Web
+184.169.128.0/17 Amazon
+185.2.220.0/22 Netflix
+185.9.188.0/22 Netflix
+185.11.124.0/22 Imperva
+185.14.184.0/22 Digital Ocean
+185.15.68.0/22 OVH
+185.25.182.0/23 Steam
+185.28.70.0/24 Leaseweb
+185.31.16.0/22 Fastly
+185.42.204.0/22 Twitch
+185.45.8.0/22 Dropbox
+185.45.160.0/22 OVH
+185.48.120.0/22 Amazon
+185.70.40.0/22 ProtonMail
+185.76.151.0/24 Telegram
+185.93.228.0/22 Sucuri
+185.105.164.0/24 Dropbox
+185.125.188.0/22 Ubuntu One
+185.143.16.0/24 Amazon
+185.199.108.0/22 GitHub
+185.205.69.0/24 Tutanota
+185.222.222.0/24 DNS-SB
+185.228.168.0/24 Cleanbrowsing DNS
+185.236.104.0/23 FlashStart DNS
+185.238.113.0/24 BitChute
+185.253.5.0/24 NextDNS
+188.34.128.0/17 Hetzner
+188.40.0.0/16 Hetzner
+188.64.224.0/21 Twitter
+188.114.96.0/20 Cloudflare
+188.165.0.0/16 OVH
+188.166.0.0/17 Digital Ocean
+188.166.128.0/17 Digital Ocean
+188.226.128.0/19 Digital Ocean
+188.226.160.0/19 Digital Ocean
+188.226.192.0/18 Digital Ocean
+190.93.240.0/20 Cloudflare
+190.217.33.0/24 Steam
+192.0.0.0/24 DS-Lite
+192.0.2.0/24 Documentation
+192.0.32.0/20 ICANN
+192.0.64.0/18 Wordpress
+192.16.64.0/21 Twitch
+192.30.252.0/22 GitHub
+192.34.56.0/21 Digital Ocean
+192.69.96.0/22 Steam
+192.81.208.0/20 Digital Ocean
+192.88.99.0/24 Reserved
+192.88.134.0/23 Sucuri
+192.95.0.0/18 OVH
+192.99.0.0/16 OVH
+192.108.239.0/24 Twitch
+192.124.249.0/24 Sucuri
+192.126.88.0/22 Liquid Web
+192.133.82.0/24 Liquid Web
+192.138.16.0/21 Liquid Web
+192.151.147.16/29 BitChute
+192.151.158.136/29 BitChute
+192.155.205.0/24 IBM
+192.158.28.0/22 Google
+192.161.0.0/24 Sucuri
+192.168.0.0/16 Local network
+192.173.64.0/18 Netflix
+192.178.0.0/15 Google
+192.187.97.88/29 BitChute
+192.187.97.232/29 BitChute
+192.187.114.16/29 BitChute
+192.187.114.96/29 BitChute
+192.187.118.168/29 BitChute
+192.187.121.208/29 BitChute
+192.187.122.72/29 BitChute
+192.187.123.112/29 BitChute
+192.187.126.0/29 BitChute
+192.189.200.0/23 Dropbox
+192.190.220.0/22 Liquid Web
+192.229.128.0/17 MCI
+192.230.64.0/18 Imperva
+192.240.152.0/21 OVH
+192.241.128.0/19 Digital Ocean
+192.241.160.0/22 Digital Ocean
+192.241.165.0/24 Digital Ocean
+192.241.166.0/23 Digital Ocean
+192.241.168.0/21 Digital Ocean
+192.241.176.0/20 Digital Ocean
+192.241.192.0/19 Digital Ocean
+192.241.224.0/19 Digital Ocean
+192.251.32.0/24 Liquid Web
+192.255.18.0/24 IBM
+192.255.38.0/24 IBM
+193.0.0.0/21 whois.ripe.net Netherlands
+193.70.0.0/17 OVH
+193.110.81.0/24 NextDNS
+193.186.4.0/24 Google
+194.169.254.0/24 Ubuntu One
+195.17.0.0/24 Amazon
+195.201.0.0/16 Hetzner
+197.234.240.0/22 Cloudflare
+198.11.250.0/24 IBM
+198.18.0.0/15 Testing
+198.23.117.0/24 IBM
+198.23.118.0/23 IBM
+198.27.64.0/18 OVH
+198.27.92.0/24 OVH
+198.38.96.0/19 Netflix
+198.41.128.0/17 Cloudflare
+198.45.48.0/20 Netflix
+198.50.128.0/17 OVH
+198.51.100.0/24 Documentation
+198.99.2.0/24 Amazon
+198.100.144.0/20 OVH
+198.143.32.0/19 Imperva
+198.199.64.0/19 Digital Ocean
+198.199.96.0/23 Digital Ocean
+198.199.98.0/24 Digital Ocean
+198.199.100.0/22 Digital Ocean
+198.199.104.0/21 Digital Ocean
+198.199.112.0/20 Digital Ocean
+198.204.226.120/29 BitChute
+198.204.228.48/29 BitChute
+198.204.235.88/29 BitChute
+198.204.235.216/29 BitChute
+198.204.244.112/29 BitChute
+198.204.245.32/29 BitChute
+198.204.245.88/29 BitChute
+198.204.250.208/29 BitChute
+198.204.251.24/29 BitChute
+198.204.253.64/29 BitChute
+198.204.253.184/29 BitChute
+198.211.96.0/21 Digital Ocean
+198.211.104.0/22 Digital Ocean
+198.211.108.0/23 Digital Ocean
+198.211.110.0/24 Digital Ocean
+198.211.112.0/20 Digital Ocean
+198.244.128.0/17 OVH
+198.245.48.0/20 OVH
+198.252.206.0/24 Stack Exchange
+199.5.26.0/24 whois.arin.net US
+199.9.248.0/21 Twitch
+199.15.80.0/21 whois.publicinterestregistry.net Canada
+199.15.88.0/24 whois.publicinterestregistry.net Canada
+199.16.156.0/22 Twitter
+199.27.72.0/21 Fastly
+199.36.154.0/23 Google
+199.36.156.0/24 Google
+199.59.148.0/22 Twitter
+199.71.0.0/24 whois.arin.net US
+199.83.128.0/21 Imperva
+199.127.232.0/22 Amazon
+199.168.96.24/29 BitChute
+199.168.96.64/29 BitChute
+199.189.224.0/22 Liquid Web
+199.192.112.0/22 Google
+199.195.118.0/24 Liquid Web
+199.212.0.0/24 whois.arin.net US
+199.223.232.0/21 Google
+199.232.0.0/16 Fastly
+200.3.12.0/22 whois.lacnic.net Uruguay
+201.159.220.0/22 whois.lacnic.net Ecuador
+203.0.113.0/24 Documentation
+203.83.220.0/22 Amazon
+203.119.100.0/22 apnic.net Australia
+204.12.192.0/18 WholeSale Internet
+204.12.194.176/29 BitChute
+204.12.194.248/29 BitChute
+204.12.220.136/29 BitChute
+204.12.220.232/29 BitChute
+204.45.0.0/16 Amazon
+204.48.16.0/20 Digital Ocean
+204.236.128.0/17 Amazon
+204.246.160.0/19 Amazon
+205.128.0.0/14 Level 3
+205.171.3.66/32 CentyrLink DNS
+205.171.202.166/32 CentyrLink DNS
+205.174.24.0/22 Liquid Web
+205.180.0.0/14 Level 3
+205.184.0.0/19 Level 3
+205.184.32.0/20 Level 3
+205.184.96.0/19 Level 3
+205.184.128.0/18 Level 3
+205.184.192.0/20 Level 3
+205.184.240.0/20 Level 3
+205.185.194.0/23 StackPath
+205.185.194.0/24 Steam
+205.185.196.0/23 StackPath
+205.185.198.0/24 StackPath
+205.185.200.0/21 StackPath
+205.185.208.0/24 StackPath
+205.185.212.0/23 StackPath
+205.185.215.0/24 StackPath
+205.185.216.0/23 StackPath
+205.185.219.0/24 StackPath
+205.185.220.0/24 StackPath
+205.187.32.0/20 Level 3
+205.187.80.0/20 Level 3
+205.187.128.0/19 Level 3
+205.187.176.0/20 Level 3
+205.187.192.0/18 Level 3
+205.196.6.0/24 Steam
+205.224.0.0/14 Level 3
+205.251.192.0/19 Amazon
+205.251.224.0/20 Amazon
+205.251.240.0/21 Amazon
+205.251.248.0/22 Amazon
+205.251.252.0/23 Amazon
+205.251.254.0/24 Amazon
+206.81.0.0/19 Digital Ocean
+206.189.0.0/17 Digital Ocean
+206.189.128.0/17 Digital Ocean
+206.190.32.0/19 Yahoo
+207.5.192.0/19 Rumble
+207.45.72.0/22 Netflix
+207.154.192.0/18 Digital Ocean
+207.171.160.0/19 Amazon
+207.223.160.0/20 Google
+207.241.224.0/20 Internet Archive
+207.246.248.0/21 Liquid Web
+208.43.117.0/24 IBM
+208.43.118.0/23 IBM
+208.64.200.0/22 Steam
+208.65.152.0/22 Google
+208.67.0.0/21 WholeSale Internet
+208.67.216.0/21 OpenDNS
+208.68.36.0/22 Digital Ocean
+208.68.108.0/22 Google
+208.75.76.0/22 Netflix
+208.75.148.0/22 Liquid Web
+208.78.164.0/22 Steam
+208.79.232.0/21 Liquid Web
+208.80.152.0/22 Wikipedia
+208.81.188.0/22 Google
+208.82.236.0/22 Creiglist
+208.86.88.0/22 Amazon
+208.86.152.0/21 Liquid Web
+208.110.48.0/20 Amazon
+208.110.64.0/19 WholeSale Internet
+208.110.68.56/29 BitChute
+208.110.91.0/24 WholeSale Internet
+208.113.128.0/17 Dreamhost
+208.117.224.0/19 Google
+209.54.176.0/20 Amazon
+209.59.128.0/18 Liquid Web
+209.73.160.0/19 Yahoo
+209.85.4.0/26 IBM
+209.85.128.0/17 Google
+209.97.128.0/18 Digital Ocean
+209.124.89.0/24 Liquid Web
+209.140.128.0/18 eBay
+209.188.80.0/20 Liquid Web
+209.191.64.0/18 Yahoo
+209.244.0.0/14 Level 3
+212.82.100.0/22 Yahoo
+213.32.0.0/17 OVH
+213.186.32.0/19 OVH
+213.239.192.0/18 Hetzner
+213.251.128.0/18 OVH
+214.0.0.0/7 US Army
+216.6.228.0/24 Leaseweb
+216.6.236.0/24 Leaseweb
+216.12.193.9/32 IBM
+216.40.193.0/24 IBM
+216.58.192.0/19 Google
+216.73.80.0/20 Google
+216.115.96.0/20 Yahoo
+216.137.32.0/19 Amazon
+216.146.32.0/20 Dyn DNS
+216.182.224.0/20 Amazon
+216.234.234.0/24 IBM
+216.239.32.0/19 Google
+217.182.0.0/16 OVH
+223.71.11.0/27 Amazon
+223.71.71.96/27 Amazon
+223.71.71.128/25 Amazon
+224.0.0.0/4 Multicast
+224.0.0.5/32 OSPF
+224.0.0.6/32 OSPF
+224.0.0.9/32 RIPv2
+224.0.0.251/32 Multicast DNS
+233.252.0.0/24 Documentation
+240.0.0.0/4 Reserved
+
+#
+#
+# input 5994, output 2501
+#
+#

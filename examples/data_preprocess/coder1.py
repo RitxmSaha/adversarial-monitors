@@ -63,7 +63,7 @@ PY_IMPORTS = "import heapq\nfrom math import floor, gcd\nimport random\nimport s
 def kodcode():  # Thanks!!! to Zhangchen and Yueqin
     # library requirements?
     rich.print(Rule("Loading KodCode..."))
-    dataset = load_dataset("zhangchenxu/KodCode_Light_R1_10K")
+    dataset = load_dataset("KodCode/KodCode-Light-RL-10K")
 
     packages = [
         "beautifulsoup4", "fake-useragent", "imageio", "keras", "lxml", "matplotlib", "numpy", "opencv-python",
@@ -90,11 +90,15 @@ def kodcode():  # Thanks!!! to Zhangchen and Yueqin
             if test_declaration and test_declaration.strip():
                 prompt += f"\n\nNote that the function declaration is {test_declaration}. Your code should be wrapped in a markdown code block."
 
-            succ, err = code_exec(code=reference_solution, pytest=test_code)
-            if not succ:
-                rich.print(f"[bold red]Test code failed for {example['question_id']}")
-                print(reference_solution)
-                print(err)
+            try:
+                succ, err = code_exec(code=reference_solution, pytest=test_code)
+                if not succ:
+                    rich.print(f"[bold red]Test code failed for {example['question_id']}")
+                    print(reference_solution)
+                    print(err)
+                    return _EMPTY_RETURN_
+            except Exception as e:
+                rich.print(f"[bold red]Exception during code execution for {example['question_id']}: {str(e)}")
                 return _EMPTY_RETURN_
 
             return {
@@ -119,7 +123,7 @@ def kodcode():  # Thanks!!! to Zhangchen and Yueqin
                     "index": idx,
                     "reference": reference_solution,
                     "prompt": prompt,
-                    "dataset": "zhangchenxu/KodCode_Light_R1_10K",
+                    "dataset": "KodCode/KodCode-Light-RL-10K",
                 },
             }
 

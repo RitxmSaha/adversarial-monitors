@@ -15,7 +15,7 @@ More results and findings to come...
 ```bash
 # For training
 pip install -e .
-pip install vllm==0.7.3
+pip install vllm==0.8.1
 pip install flash-attn --no-build-isolation
 pip install wandb IPython matplotlib gpustat # utility
 ```

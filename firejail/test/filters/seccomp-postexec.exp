@@ -1,0 +1,30 @@
+#!/usr/bin/expect -f
+# This file is part of Firejail project
+# Copyright (C) 2014-2025 Firejail Authors
+# License GPL v2
+
+set timeout 10
+spawn $env(SHELL)
+match_max 100000
+
+send --  "firejail --debug --seccomp=execve\r"
+expect {
+	timeout {puts "TESTING ERROR 0\n";exit}
+	"configuring postexec seccomp filter in"
+}
+expect {
+	timeout {puts "TESTING ERROR 1\n";exit}
+	"monitoring pid"
+}
+sleep 1
+
+send -- "ls\r"
+expect {
+	timeout {puts "TESTING ERROR 2\n";exit}
+	"not permitted"
+}
+
+
+send -- "exit\r"
+after 100
+puts "all done\n"

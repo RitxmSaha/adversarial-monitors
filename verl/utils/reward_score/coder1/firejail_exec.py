@@ -27,7 +27,34 @@ from .utils import _ERROR_MSG_PREFIX, _DEFAULT_TIMEOUT_SECONDS
 
 CLI_ARG_SIZE_LIMIT = 1024 * 3
 
+def timeout(timeout_seconds: int = 8):
+    if os.name == "posix":
+        import signal
 
+        def decorator(func):
+
+            def handler(signum, frame):
+                raise TimeoutError("Operation timed out!")
+
+            def wrapper(*args, **kwargs):
+                old_handler = signal.getsignal(signal.SIGALRM)
+                signal.signal(signal.SIGALRM, handler)
+                signal.alarm(timeout_seconds)
+
+                try:
+                    return func(*args, **kwargs)
+                finally:
+                    signal.alarm(0)
+                    signal.signal(signal.SIGALRM, old_handler)
+
+            return wrapper
+
+        return decorator
+    else:
+        raise NotImplementedError(f"Unsupported OS: {os.name}")
+
+
+@timeout(timeout_seconds=20)
 def code_exec_firejail(code, stdin: str = None, timeout=_DEFAULT_TIMEOUT_SECONDS, pytest: str = None):
     env = os.environ.copy()
     env["OPENBLAS_NUM_THREADS"] = "1"

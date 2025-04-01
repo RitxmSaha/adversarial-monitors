@@ -1,0 +1,43 @@
+#!/usr/bin/expect -f
+# This file is part of Firejail project
+# Copyright (C) 2014-2025 Firejail Authors
+# License GPL v2
+
+set timeout 10
+spawn $env(SHELL)
+match_max 100000
+
+# options
+send -- "firejail --net=none\r"
+expect {
+	timeout {puts "TESTING ERROR 0\n";exit}
+	-re "Child process initialized in \[0-9\]+.\[0-9\]+ ms"
+}
+after 500
+
+send -- "cat /proc/1/net/dev | wc -l\r"
+expect {
+	timeout {puts "TESTING ERROR 1\n";exit}
+	"3"
+}
+send -- "exit\r"
+after 500
+
+
+# profile
+send -- "firejail --profile=net_none.profile\r"
+expect {
+	timeout {puts "TESTING ERROR 2\n";exit}
+	-re "Child process initialized in \[0-9\]+.\[0-9\]+ ms"
+}
+after 500
+
+send -- "cat /proc/1/net/dev | wc -l\r"
+expect {
+	timeout {puts "TESTING ERROR 3\n";exit}
+	"3"
+}
+send -- "exit\r"
+after 500
+
+puts "\nall done\n"
