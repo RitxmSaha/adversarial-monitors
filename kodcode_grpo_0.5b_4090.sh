@@ -1,5 +1,6 @@
 #!/bin/bash
-# The config is optimized for 4xA100
+# The config is optimized for 2*4090
+# Test Model: Qwen/Qwen2.5-Coder-0.5B-Instruct
 set -x
 
 if [ -z "$CUDA_VISIBLE_DEVICES" ]; then
@@ -15,11 +16,11 @@ export VLLM_ATTENTION_BACKEND=XFORMERS
 # MAIN CONFIG
 MAX_EPOCHS=8
 DATASET=kodcode-9k
-MODEL_PATH=Qwen/Qwen2.5-Coder-7B-Instruct
+MODEL_PATH=Qwen/Qwen2.5-Coder-0.5B-Instruct
 ROLLOUT_N_SAMPLE=16
 ROLLOUT_N_QUERY=16
-MICRO_BATCH_PER_GPU=2 # * GPUS_PER_NODE -> GLOBAL_BATCH_SIZE
-GRAD_ACC_STEPS=16
+MICRO_BATCH_PER_GPU=1 # * GPUS_PER_NODE -> GLOBAL_BATCH_SIZE
+GRAD_ACC_STEPS=32
 GLOBAL_BATCH_SIZE=$(($(($GPUS_PER_NODE * $MICRO_BATCH_PER_GPU)) * $GRAD_ACC_STEPS))
 
 MODEL_NICKNAME=$(echo $MODEL_PATH | cut -d'/' -f2)
@@ -41,8 +42,8 @@ python3 -m verl.trainer.main_ppo \
     data.train_files=data/$DATASET/train.parquet \
     data.val_files=data/$DATASET/test.parquet \
     data.train_batch_size=$ROLLOUT_N_QUERY \
-    data.max_prompt_length=256 \
-    data.max_response_length=2048 \
+    data.max_prompt_length=512 \
+    data.max_response_length=1536 \
     actor_rollout_ref.model.path=$MODEL_PATH \
     actor_rollout_ref.actor.optim.lr=5e-7 \
     actor_rollout_ref.model.use_remove_padding=True \
@@ -52,7 +53,7 @@ python3 -m verl.trainer.main_ppo \
     actor_rollout_ref.actor.kl_loss_coef=0.001 \
     actor_rollout_ref.actor.kl_loss_type=low_var_kl \
     actor_rollout_ref.model.enable_gradient_checkpointing=True \
-    actor_rollout_ref.actor.fsdp_config.param_offload=False \
+    actor_rollout_ref.actor.fsdp_config.param_offload=True \
     actor_rollout_ref.actor.fsdp_config.optimizer_offload=True \
     actor_rollout_ref.rollout.log_prob_micro_batch_size=128 \
     actor_rollout_ref.rollout.name=vllm \
@@ -63,7 +64,7 @@ python3 -m verl.trainer.main_ppo \
     actor_rollout_ref.ref.fsdp_config.param_offload=False \
     algorithm.kl_ctrl.kl_coef=0.001 \
     trainer.critic_warmup=0 \
-    trainer.logger=['wandb'] \
+    trainer.logger=['console','wandb'] \
     trainer.project_name='code-r1' \
     trainer.experiment_name=${RUN_NAME} \
     trainer.nnodes=1 \

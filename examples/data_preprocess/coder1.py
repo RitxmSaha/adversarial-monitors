@@ -441,8 +441,7 @@ if __name__ == "__main__":
     train_datasets = []
     test_datasets = []
 
-    # dataset_makes = [leetcode2k, taco]
-    dataset_makes = [kodcode]
+    dataset_makes = [leetcode2k, taco]
     names = "-".join([make.__name__ for make in dataset_makes])
 
     for train, test in [make() for make in dataset_makes]:

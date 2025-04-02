@@ -1,13 +1,8 @@
 # Code-R1: Reproducing R1 for Code with Reliable Rewards
 
-This repository includes implementations to reproduce the R1 pipeline for code generation:
+This repository includes implementations to reproduce the R1 pipeline for coding with synthetic datasets.
 
-* **Result:** 2K Code-R1 samples + `Qwen2.5-7B-Instruct-1M` beats `Qwen2.5-Coder-7B-Instruct` (even better w/ 12K samples).
-* **Finding:** Quality of rewards matters. False positives in datasets and execution confuse the model.
-* **Implementation:** A reliable, scalable, and sandboxed pipeline to minimize reward false positives in datasets and execution.
-
-More results and findings to come...
-
+Some contents in this readme are modified for [KodCode](https://kodcode-ai.github.io/).
 ## Setup
 
 ### Environment
@@ -18,24 +13,31 @@ pip install -e .
 pip install vllm==0.8.1
 pip install flash-attn --no-build-isolation
 pip install wandb IPython matplotlib gpustat # utility
+pip install -U "huggingface_hub[cli]"
+
+sudo apt-get install python3-pytest -y # pytest env for kodcode
 ```
 
 ### Sandboxing
 
-I tried multiple ways for sandboxing including calling code execution servers, running dockerized Python, calling paid services, etc.
-`firejail` is the approach I found to meet all the three:
-
-1. Reliability -- False positive comes when "autograders" have concurrency issue (timeouts), violating OS limits (`OSError`), etc.
-2. Scalability -- e.g., dockerized Python run is generally reliable but too slow (e.g., 20 samples/s on 192 cores).
-3. Security -- ... otherwise the school IT will email you and stop your server...
+Please install `firejail` for reliable sandboxing. 
 
 ```bash
 sudo add-apt-repository ppa:deki/firejail
 sudo apt-get update
 sudo apt-get install firejail firejail-profiles
+
+# Alternatively, build from source
+cd firejail
+sudo apt-get install gawk -y
+chmod +x ./configure
+chmod +x src/man/mkman.sh
+./configure && make && sudo make install-strip
+cd ..
+
 ```
 
-### Datasets
+### Datasets (Code-R1-12K)
 
 The current version has 12K RL samples (prompt + tests) at [🤗 ganler/code-r1-12k](https://huggingface.co/datasets/ganler/code-r1-12k):
 
@@ -46,48 +48,43 @@ In general, it's suggesgted to test data & sandbox on every dataset & environmen
 Directly using noisy data and mismatched envornments can lead to reward false positives, confusing the model.
 These noise could come from (i) wrong tests, (ii) unsolvable prompts (e.g., images tags), and (iii) execution environment mismatch.
 
-To produce locally validated RL data:
-
 ```bash
 python examples/data_preprocess/coder1.py
 ```
 
-### Run!
+### Datasets (KodCode-Light)
+
+The current version has 10K RL samples (prompt + tests) at [🤗 KodCode/KodCode-Light-RL-10K](https://huggingface.co/datasets/KodCode/KodCode-Light-RL-10K):
+
+To produce locally validated RL data:
 
 ```bash
-bash main_grpo.sh
+python examples/data_preprocess/kodcode.py
 ```
 
-> [!NOTE]
->
-> The script was optimized for single-node 8x H200 setup. You might need to customize the settings for your own workstation.
+### Run KodCode!
 
-## Code-R1 Zero based on 7B models
+We have tested several GRPO configurations across various GPU types (including A100, A6000, and RTX 4090).
+For example, to fine-tune a 7B model with GRPO using 8×A100 GPUs, simply run:
 
-We trained two models based on Qwen2.5-7B-Instruct-1M by pure R1 Zero:
-* [🤗 CodeR1-Zero-Qwen2.5-7B-12k-832](https://huggingface.co/ganler/CodeR1-Zero-Qwen2.5-7B-12k-832): using 12K RL samples trained in 832 steps ([training logs](https://api.wandb.ai/links/llm4code/y13vs8d9)).
-* [🤗 CodeR1-Zero-Qwen2.5-7B-LC2k-1088](https://huggingface.co/ganler/CodeR1-Zero-Qwen2.5-7B-LC2k-1088): using 2K RL samples from LeetCode,  trained in 1088 steps ([training logs](https://api.wandb.ai/links/llm4code/k8q6zu51)).
+```bash
+bash kodcode_grpo_7b_8a100.sh
+```
 
-|                    Model                       |     LCB (v5)  |   HumanEval+   |    MBPP+    | **Average** |
-|------------------------------------------------|---------------|----------------|-------------|------------:|
-| Qwen2.5-7B-Instruct-1M                         |     24.0      |     80.5       |    66.7     |   57.1      |
-| + Code-R1-Zero (2k  - 1088s GRPO)              |     28.6      |     84.8       |    70.1     |   61.2      |
-| + Code-R1-Zero (12k -  832s GRPO)              |     29.7      |     83.5       |    74.3     | 🌟**62.5**  |
+## Code-R1 based on 7B models + KodCode-Light
 
-* 2K leetcode training samples can already show promising results without any additional SFT or distillation.
-* Adding it to 12K data (10K more verified data from TACO) can further improve the performance.
+**Experimental Setup.** We conduct RL experiments on both Qwen2.5-7B-Instruct-1M and Qwen2.5-Coder-7B-Instruct using 10K randomly selected samples from KODCODE-V1, which we named as [🤗 KodCode/KodCode-Light-RL-10K](https://huggingface.co/datasets/KodCode/KodCode-Light-RL-10K). We perform GRPO with actor learning rate of 5\*10^-7, 16 rollouts per question, a batch size of 256, max response length of 4096, and apply KL coefficient of 0.001.
 
-Some existing models:
+**Experimental Results.** The experimental results are demonstrated in the table below. We observe significant performance improvement on all benchmarks compared to baselines after RL. In addition, we observe that continuing to increase the training steps can further enhance the performance.
 
-|                    Model                       |     LCB (v5)  |   HumanEval+   |    MBPP+    | **Average** |
-|------------------------------------------------|---------------|----------------|-------------|------------:|
-| Qwen2.5-Coder-7B-Instruct                      |     31.1      |     82.3       |    69.6     |  61.0       |
-| Eurus-2-7B-PRIME                               |     23.8      |     65.9       |    29.9     |  39.9       |
-| Sky-T1-7B                                      |     21.3      |     54.3       |    50.8     |  42.1       |
-
-* Qwen2.5-Coder-7B-Instruct, despite released months back, is still very performant as the best baseline, but we don't know where the improvement comes from.
-* Eurus-2-7B-PRIME starts from Qwen2.5-Math-7B-Instruct and is RL only. Its training data includes (unfiltered) extensive coding datasets, including APPS, CodeContests, TACO, and Codeforces. Code-R1-Zero outperforms it significantly despite using fewer data, likely because we use validated datasets and sandboxes.
-* Sky-T1-7B uses a combination of RL and SFT/distillation steps. Its RL partially uses PRIME but its training data does not (seem to) include coding datasets.
+| Model                            | LiveCodeBench (Easy\|Medium\|Hard)          | BCB-Complete (Full\|Hard)   | BCB-Instruct (Full\|Hard)  | HumanEval (Base\|+)| MBPP (Base\|+) | Average |
+| -------------------------------- | ----------------------- | -------------- | -------------- | -------------- | -------------- | ------- |
+| Qwen2.5-Coder-7B-Instruct | 0.574 \| 0.230 \| 0.044 | 0.520 \| 0.216 | 0.418 \| 0.196 | 0.915 \| 0.854 | 0.831 \| 0.717 | 0.5232  |
+| + RL KodCode-10K (Step 128)    | 0.652 \| 0.211 \| 0.041 | 0.525 \| 0.257 | 0.422 \| 0.203 | 0.909 \| 0.860 | 0.849 \| 0.728 | 0.5356  |
+| + RL KodCode-10K (Step 256)    | 0.645 \| 0.199 \| 0.033 | 0.537 \| 0.270 | 0.429 \| 0.216 | 0.902 \| 0.854 | 0.865 \| 0.741 | **0.5399**  |
+| Qwen2.5-7B-Instruct-1M (Q7I1M)   | 0.577 \| 0.124 \| 0.037 | 0.453 \| 0.142 | 0.366 \| 0.176 | 0.860 \| 0.793 | 0.788 \| 0.693 | 0.4763  |
+| + RL KodCode-10K (Step 128)    | 0.602 \| 0.190 \| 0.026 | 0.470 \| 0.196 | 0.367 \| 0.135 | 0.902 \| 0.835 | 0.810 \| 0.709 | 0.4969  |
+| + RL KodCode-10K (Step 256)    | 0.570 \| 0.187 \| 0.030 | 0.482 \| 0.196 | 0.368 \| 0.128 | 0.915 \| 0.860 | 0.828 \| 0.728 | **0.503**   |
 
 ## Citation
 
@@ -99,6 +96,16 @@ If you find this work helpful...
   author={Liu, Jiawei and Zhang, Lingming},
   howpublished={\url{https://github.com/ganler/code-r1}},
   year={2025}
+}
+
+@article{xu2025kodcode,
+      title={KodCode: A Diverse, Challenging, and Verifiable Synthetic Dataset for Coding}, 
+      author={Zhangchen Xu and Yang Liu and Yueqin Yin and Mingyuan Zhou and Radha Poovendran},
+      year={2025},
+      eprint={2503.02951},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2503.02951}, 
 }
 ```
 
