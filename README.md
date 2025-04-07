@@ -10,7 +10,8 @@ Some contents in this readme are modified for [KodCode](https://kodcode-ai.githu
 ```bash
 # For training
 pip install -e .
-pip install vllm==0.8.1
+pip install vllm==0.8.2
+pip install tensordict==0.6.0
 pip install flash-attn --no-build-isolation
 pip install wandb IPython matplotlib gpustat # utility
 pip install -U "huggingface_hub[cli]"
